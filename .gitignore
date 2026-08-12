@@ -1,0 +1,27 @@
+# Engagements de pentest (si los hay) — nunca publicar
+engagements/
+authorization.md
+scope.txt
+
+# Secretos y credenciales
+.env
+.env.*
+*.pem
+*.key
+*_TOKEN*
+*token.json
+findings/secrets-vault.md
+
+# Logs y temporales
+*.log
+*.tmp
+*.bak
+Thumbs.db
+
+# IDEs / editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
