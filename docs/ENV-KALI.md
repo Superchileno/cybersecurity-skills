@@ -8,11 +8,11 @@ Generado: 2026-08-12 (sesión de configuración inicial).
 |---|---|
 | Distribución | Kali GNU/Linux Rolling (2025.4) |
 | Kernel | 6.18.33.2-microsoft-standard-WSL2 |
-| Usuario | lmiranda (sudo NOPASSWD configurado vía /etc/sudoers.d/lmiranda) |
+| Usuario | <usuario-local> (sudo NOPASSWD configurado vía /etc/sudoers.d/<usuario>) |
 | CPU | 12 vCPU |
 | RAM | 15 GiB total (~14 GiB disponibles) |
 | Disco | ~1 TB (WSL2, ~953 GB libres) |
-| IP eth0 | 172.28.234.86/20 (WSL NAT) |
+| IP eth0 | <ip-wsl>/20 (WSL NAT; oculta para privacidad) |
 
 ## Acceso al entorno
 
