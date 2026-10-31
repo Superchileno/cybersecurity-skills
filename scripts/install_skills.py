@@ -11,6 +11,8 @@ Uso:
 Reglas:
   - kind "full": copia el árbol completo (SKILL.md, references, scripts, assets).
   - kind "lite": materializa <dest>/<id>/SKILL.md con la tarjeta completa.
+  - `deep`: material de profundidad vendorizado en `_src/`. Con --with-deep se
+    copia a <dest>/<id>/references/<pack>/; sin el flag solo se avisa.
   - `supersedes`: avisa si el destino ya tiene una skill equivalente; con
     --prune-superseded la mueve a <dest>/.superseded/.
   - Por defecto instala solo el área CTF para no saturar el selector.
@@ -34,6 +36,17 @@ def cargar_manifest(repo: str) -> dict:
         return json.load(fh)
 
 
+def tamano_kb(carpeta: str) -> float:
+    total = 0
+    for raiz, _, archivos in os.walk(carpeta):
+        for nombre in archivos:
+            try:
+                total += os.path.getsize(os.path.join(raiz, nombre))
+            except OSError:
+                pass
+    return total / 1024
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description="Instalador de skills")
     ap.add_argument("--repo", default=RAIZ)
@@ -44,6 +57,8 @@ def main() -> int:
     ap.add_argument("--list", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--force", action="store_true")
+    ap.add_argument("--with-deep", action="store_true",
+                    help="copia el material vendorizado de _src/ en references/")
     ap.add_argument("--prune-superseded", action="store_true")
     args = ap.parse_args()
 
@@ -87,6 +102,9 @@ def main() -> int:
         if args.dry_run:
             origen = s["full"] if s["kind"] == "full" else s["card"]
             print(f"  [dry] {s['kind']:<5} {origen} -> {dst}")
+            for origen_deep in s.get("deep") or []:
+                accion = "copiar" if args.with_deep else "omitir"
+                print(f"        [dry] deep {accion}: {origen_deep}")
             instaladas += 1
             continue
 
@@ -107,6 +125,23 @@ def main() -> int:
                 fh.write(contenido)
         print(f"  [+] {s['kind']:<5} {s['id']}")
         instaladas += 1
+
+        for origen_deep in s.get("deep") or []:
+            ruta_deep = os.path.join(args.repo, origen_deep)
+            if not os.path.isdir(ruta_deep):
+                print(f"        [!] falta {origen_deep}")
+                continue
+            nombre_pack = os.path.basename(ruta_deep.rstrip("/"))
+            if not args.with_deep:
+                print(f"        profundidad en {origen_deep} "
+                      f"(usa --with-deep para copiarla)")
+                continue
+            destino_deep = os.path.join(dst, "references", nombre_pack)
+            if os.path.exists(destino_deep):
+                shutil.rmtree(destino_deep)
+            shutil.copytree(ruta_deep, destino_deep)
+            print(f"        deep: {nombre_pack} "
+                  f"({tamano_kb(destino_deep):.0f} KB) -> references/")
 
         for viejo in s.get("supersedes", []):
             antiguo = os.path.join(destino, viejo)

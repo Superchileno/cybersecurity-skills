@@ -11,7 +11,13 @@ Cada entrada declara:
   kind        "full" si existe versión completa en _full/, si no "lite"
   card        ruta de la tarjeta
   full        ruta del árbol completo o null
+  deep        lista de directorios de profundidad en _src/ (puede estar vacía)
   supersedes  ids locales que esta skill reemplaza al instalar
+
+`source` en el frontmatter decide el nivel:
+  _full/<skill>      -> kind "full" y ruta en `full`
+  _src/<pack>/<dir>  -> kind "lite" y ruta(s) en `deep` (admite lista separada
+                        por comas cuando el material vive en varios directorios)
 """
 from __future__ import annotations
 
@@ -100,17 +106,30 @@ def construir(repo: str) -> dict:
                 continue
             card = f"skills/{area}/{nombre}"
             full = None
+            deep: list[str] = []
             fuente = fm.get("source", "")
             if fuente.startswith("_full/"):
                 candidato = f"skills/CTF/{fuente}"
                 if os.path.isfile(os.path.join(repo, candidato, "SKILL.md")):
                     full = candidato
+            else:
+                for parte in fuente.split(","):
+                    parte = parte.strip()
+                    if not parte.startswith("_src/"):
+                        continue
+                    candidato = f"skills/{parte}"
+                    if os.path.isdir(os.path.join(repo, candidato)):
+                        deep.append(candidato)
+                    else:
+                        print(f"[!] {area}/{nombre}: falta el directorio "
+                              f"{candidato}", file=sys.stderr)
             entradas.append({
                 "id": ident,
                 "area": area,
                 "kind": "full" if full else "lite",
                 "card": card,
                 "full": full,
+                "deep": deep,
                 "supersedes": SUPERSEDES.get(ident, []),
             })
 
@@ -120,7 +139,7 @@ def construir(repo: str) -> dict:
         print(f"[!] ids duplicados: {duplicados}", file=sys.stderr)
 
     return {
-        "version": 1,
+        "version": 2,
         "generated": dt.date.today().isoformat(),
         "areas": AREAS,
         "skills": entradas,
@@ -162,8 +181,9 @@ def main() -> int:
         fh.write(nuevo)
 
     full = sum(1 for e in datos["skills"] if e["kind"] == "full")
+    con_deep = sum(1 for e in datos["skills"] if e.get("deep"))
     print(f"skills: {len(datos['skills'])} (full: {full}, lite: "
-          f"{len(datos['skills']) - full})")
+          f"{len(datos['skills']) - full}, con deep: {con_deep})")
     print(f"escrito: {ruta}")
     return 0
 

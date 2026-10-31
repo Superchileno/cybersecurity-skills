@@ -20,6 +20,8 @@ AREAS = ["REDTEAM", "REDES", "WEB", "OSINT", "BLUETEAM", "FORENSE",
 RE_FM = re.compile(r"\A---\n(.*?)\n---\n", re.S)
 RE_LINK = re.compile(r"\]\((SKILL-[A-Z0-9-]+\.md)\)")
 RE_FLAG_LARGA = re.compile(r"[A-Za-z][A-Za-z0-9_]{2,20}\{([^}\n]{25,})\}")
+# Para material vendorizado: solo cuentan prefijos tipo flag y cuerpos sin llaves
+RE_FLAG_DEEP = re.compile(r"\b[A-Z][A-Z0-9_]{2,20}\{([A-Za-z0-9_\-+=.:/!@#$%^&* ]{25,})\}")
 
 PROHIBIDO = [
     (re.compile(r"TRAMACTF", re.I), "prefijo de flag real"),
@@ -118,7 +120,35 @@ def main() -> int:
         if not fm.get("name") or not fm.get("description"):
             errores.append(f"{s['id']}: SKILL.md completo sin frontmatter válido")
 
-    # 5. enlaces de los INDEX
+    # 5. material vendorizado (deep)
+    con_deep = 0
+    for s in manifest.get("skills", []):
+        for rel in s.get("deep") or []:
+            con_deep += 1
+            if not rel.startswith("skills/_src/"):
+                errores.append(f"{s['id']}: deep fuera de skills/_src/ ({rel})")
+                continue
+            base = os.path.join(args.repo, rel)
+            if not os.path.isdir(base):
+                errores.append(f"{s['id']}: falta el directorio deep {rel}")
+                continue
+            if not os.path.isfile(os.path.join(base, "SKILL.md")):
+                avisos.append(f"{s['id']}: {rel} sin SKILL.md")
+            for raiz, _, archivos in os.walk(base):
+                for nombre in archivos:
+                    if not nombre.endswith((".md", ".py", ".sh")):
+                        continue
+                    ruta = os.path.join(raiz, nombre)
+                    try:
+                        with open(ruta, "r", encoding="utf-8") as fh:
+                            texto = fh.read()
+                    except (OSError, UnicodeDecodeError):
+                        continue
+                    if RE_FLAG_DEEP.search(texto):
+                        avisos.append(f"{s['id']}: {os.path.relpath(ruta, args.repo)}"
+                                      f" contiene una posible flag real")
+
+    # 6. enlaces de los INDEX
     for area in AREAS:
         index = os.path.join(args.repo, "skills", area, "INDEX.md")
         if not os.path.isfile(index):
@@ -130,7 +160,7 @@ def main() -> int:
             if not os.path.isfile(os.path.join(args.repo, "skills", area, enlace)):
                 errores.append(f"{area}/INDEX.md: enlace roto a {enlace}")
 
-    # 6. flags largas (posibles flags reales)
+    # 7. flags largas (posibles flags reales)
     for raiz, dirs, archivos in os.walk(os.path.join(args.repo, "skills")):
         dirs[:] = [d for d in dirs if d != "_src"]
         for nombre in archivos:
@@ -146,13 +176,13 @@ def main() -> int:
                 errores.append(f"{os.path.relpath(ruta, args.repo)}: "
                                f"posible flag real ({len(m.group(1))} chars)")
 
-    # 7. CLI
+    # 8. CLI
     cli = os.path.join(args.repo, "skills", "CTF", "bin", "ctf-arsenal")
     if not os.path.isfile(cli):
         errores.append("falta skills/CTF/bin/ctf-arsenal")
 
     print(f"tarjetas: {tarjetas} | manifest: {len(por_id)} | "
-          f"errores: {len(errores)} | avisos: {len(avisos)}")
+          f"deep: {con_deep} | errores: {len(errores)} | avisos: {len(avisos)}")
 
     if args.verbose or errores:
         for e in errores:

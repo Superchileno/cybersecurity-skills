@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "generated": "2026-10-30",
   "areas": [
     "REDTEAM",
@@ -18,6 +18,7 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-AD.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -26,6 +27,9 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-C2-HAVOC.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/operating-havoc-c2/"
+      ],
       "supersedes": []
     },
     {
@@ -34,6 +38,9 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-C2-REDIRECT.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/building-c2-redirector-infrastructure/"
+      ],
       "supersedes": []
     },
     {
@@ -42,6 +49,9 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-C2-SLIVER.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/operating-sliver-c2/"
+      ],
       "supersedes": []
     },
     {
@@ -50,6 +60,7 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-CADENAS.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -58,6 +69,7 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-ENTRA-ATTACK.md",
       "full": null,
+      "deep": [],
       "supersedes": [
         "attacking-entra-id-with-roadtools"
       ]
@@ -68,6 +80,9 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-ETERNALBLUE.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/exploiting-ms17-010-eternalblue-vulnerability/"
+      ],
       "supersedes": []
     },
     {
@@ -76,6 +91,7 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-EVIDENCIA.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -84,6 +100,7 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-METODOLOGIA.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -92,6 +109,9 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-PRIVESC-LINUX.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-privilege-escalation-on-linux/"
+      ],
       "supersedes": []
     },
     {
@@ -100,6 +120,7 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-PWSPRAY.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -108,6 +129,7 @@
       "kind": "lite",
       "card": "skills/REDTEAM/SKILL-REPORTE.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -116,6 +138,9 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-BGP-HIJACK.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/exploiting-bgp-hijacking-vulnerabilities/"
+      ],
       "supersedes": [
         "exploiting-bgp-hijacking-vulnerabilities"
       ]
@@ -126,6 +151,9 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-CT-LOGS.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/analyzing-tls-certificate-transparency-logs/"
+      ],
       "supersedes": []
     },
     {
@@ -134,6 +162,7 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-FINGERPRINT.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -142,6 +171,7 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-ORIGEN-IP.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -150,6 +180,7 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-PUERTOS.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -158,6 +189,9 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-SHODAN.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-ip-reputation-analysis-with-shodan/"
+      ],
       "supersedes": [
         "performing-ip-reputation-analysis-with-shodan"
       ]
@@ -168,6 +202,9 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-SSL-TLS.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-ssl-tls-security-assessment/"
+      ],
       "supersedes": [
         "performing-ssl-tls-security-assessment"
       ]
@@ -178,6 +215,7 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-SUBDOMINIOS.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -186,6 +224,7 @@
       "kind": "lite",
       "card": "skills/REDES/SKILL-VHOST.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -194,6 +233,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-API.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -202,6 +242,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-ENUM-WEB.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -210,6 +251,9 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-HPP.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-http-parameter-pollution-attack/"
+      ],
       "supersedes": [
         "performing-http-parameter-pollution-attack"
       ]
@@ -220,6 +264,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-IDOR-ATO.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -228,6 +273,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-LFI-RCE.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -236,6 +282,9 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-PROMPT-LEAK.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/testing-for-system-prompt-leakage/"
+      ],
       "supersedes": [
         "testing-for-system-prompt-leakage"
       ]
@@ -246,6 +295,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-SQLI.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -254,6 +304,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-SSRF.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -262,6 +313,9 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-THICK-CLIENT.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-thick-client-application-penetration-test/"
+      ],
       "supersedes": [
         "performing-thick-client-application-penetration-test"
       ]
@@ -272,6 +326,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-UPLOAD.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -280,6 +335,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-WEBPENTEST.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -288,6 +344,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-WPSCAN.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -296,6 +353,9 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-XML-INJECTION.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/testing-for-xml-injection-vulnerabilities/"
+      ],
       "supersedes": [
         "testing-for-xml-injection-vulnerabilities"
       ]
@@ -306,6 +366,7 @@
       "kind": "lite",
       "card": "skills/WEB/SKILL-XSS.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -314,6 +375,9 @@
       "kind": "lite",
       "card": "skills/OSINT/SKILL-ACTOR-OSINT.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/building-threat-actor-profile-from-osint/"
+      ],
       "supersedes": []
     },
     {
@@ -322,6 +386,7 @@
       "kind": "lite",
       "card": "skills/OSINT/SKILL-GDORKS.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -330,6 +395,7 @@
       "kind": "lite",
       "card": "skills/OSINT/SKILL-OSINT.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -338,6 +404,7 @@
       "kind": "lite",
       "card": "skills/OSINT/SKILL-SECRETOS.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -346,6 +413,7 @@
       "kind": "lite",
       "card": "skills/OSINT/SKILL-SHERLOCK.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -354,6 +422,9 @@
       "kind": "lite",
       "card": "skills/OSINT/SKILL-SPIDERFOOT.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-osint-with-spiderfoot/"
+      ],
       "supersedes": [
         "performing-osint-with-spiderfoot"
       ]
@@ -364,6 +435,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-BEACONS.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/hunting-for-cobalt-strike-beacons/"
+      ],
       "supersedes": [
         "hunting-for-cobalt-strike-beacons"
       ]
@@ -374,6 +448,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-CHAINSAW.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/hunting-evtx-with-chainsaw/"
+      ],
       "supersedes": [
         "hunting-evtx-with-chainsaw"
       ]
@@ -384,6 +461,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-DETECCION-DCSYNC.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/detecting-dcsync-attack-in-active-directory/"
+      ],
       "supersedes": [
         "detecting-dcsync-attack-in-active-directory"
       ]
@@ -394,6 +474,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-GOLDEN-TICKET.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/detecting-golden-ticket-attacks-in-kerberos-logs/"
+      ],
       "supersedes": [
         "detecting-golden-ticket-attacks-in-kerberos-logs"
       ]
@@ -404,6 +487,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-HUNTING-ELASTIC.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-threat-hunting-with-elastic-siem/"
+      ],
       "supersedes": []
     },
     {
@@ -412,6 +498,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-LATERAL-SPLUNK.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/detecting-lateral-movement-with-splunk/"
+      ],
       "supersedes": [
         "detecting-lateral-movement-with-splunk"
       ]
@@ -422,6 +511,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-LOTL.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/detecting-living-off-the-land-attacks/"
+      ],
       "supersedes": []
     },
     {
@@ -430,6 +522,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-PLAYBOOK-RANSOMWARE.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/building-ransomware-playbook-with-cisa-framework/"
+      ],
       "supersedes": []
     },
     {
@@ -438,6 +533,7 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-PURPLE-TEAM.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -446,6 +542,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-SIEM-USE-CASES.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/implementing-siem-use-cases-for-detection/"
+      ],
       "supersedes": []
     },
     {
@@ -454,6 +553,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-SIGMA.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/building-detection-rules-with-sigma/"
+      ],
       "supersedes": [
         "building-detection-rules-with-sigma"
       ]
@@ -464,6 +566,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-SOAR-PHANTOM.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/implementing-soar-automation-with-phantom/"
+      ],
       "supersedes": []
     },
     {
@@ -472,6 +577,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-VELOCIRAPTOR.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/fleet-hunting-with-velociraptor/"
+      ],
       "supersedes": [
         "fleet-hunting-with-velociraptor"
       ]
@@ -482,6 +590,9 @@
       "kind": "lite",
       "card": "skills/BLUETEAM/SKILL-WAZUH.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/implementing-endpoint-detection-with-wazuh/"
+      ],
       "supersedes": [
         "implementing-endpoint-detection-with-wazuh"
       ]
@@ -492,6 +603,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-AUTOPSY.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/analyzing-disk-image-with-autopsy/"
+      ],
       "supersedes": [
         "analyzing-disk-image-with-autopsy"
       ]
@@ -502,6 +616,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-DD-ACQUISICION.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/acquiring-disk-image-with-dd-and-dcfldd/"
+      ],
       "supersedes": []
     },
     {
@@ -510,6 +627,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-FOREMOST.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-file-carving-with-foremost/"
+      ],
       "supersedes": [
         "performing-file-carving-with-foremost"
       ]
@@ -520,6 +640,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-GHIDRA.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/reverse-engineering-malware-with-ghidra/"
+      ],
       "supersedes": [
         "reverse-engineering-malware-with-ghidra"
       ]
@@ -530,6 +653,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-HAYABUSA.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/generating-forensic-timelines-with-hayabusa/"
+      ],
       "supersedes": [
         "generating-forensic-timelines-with-hayabusa"
       ]
@@ -540,6 +666,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-HINDSIGHT.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/analyzing-browser-forensics-with-hindsight/"
+      ],
       "supersedes": [
         "analyzing-browser-forensics-with-hindsight"
       ]
@@ -550,6 +679,7 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-IOC.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -558,6 +688,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-KAPE.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/triaging-windows-with-kape/"
+      ],
       "supersedes": [
         "triaging-windows-with-kape"
       ]
@@ -568,6 +701,7 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-OSS-FORENSICS.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -576,6 +710,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-PLASO.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/building-super-timelines-with-plaso/"
+      ],
       "supersedes": [
         "building-super-timelines-with-plaso"
       ]
@@ -586,6 +723,7 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-RECUPERAR.md",
       "full": null,
+      "deep": [],
       "supersedes": []
     },
     {
@@ -594,6 +732,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-ROOTKITS.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/analyzing-bootkit-and-rootkit-samples/"
+      ],
       "supersedes": []
     },
     {
@@ -602,6 +743,7 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-VOLATILITY.md",
       "full": null,
+      "deep": [],
       "supersedes": [
         "conducting-memory-forensics-with-volatility",
         "analyzing-memory-dumps-with-volatility"
@@ -613,6 +755,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-YARA.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-yara-rule-development-for-detection/"
+      ],
       "supersedes": [
         "performing-threat-hunting-with-yara-rules",
         "performing-yara-rule-development-for-detection"
@@ -624,6 +769,9 @@
       "kind": "lite",
       "card": "skills/FORENSE/SKILL-ZIMMERMAN.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-windows-artifact-analysis-with-eric-zimmerman-tools/"
+      ],
       "supersedes": [
         "performing-windows-artifact-analysis-with-eric-zimmerman-tools"
       ]
@@ -634,6 +782,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-CMMC.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/achieving-cmmc-level-2-compliance/"
+      ],
       "supersedes": [
         "achieving-cmmc-level-2-compliance"
       ]
@@ -644,6 +795,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-GDPR.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/implementing-gdpr-data-subject-access-request/"
+      ],
       "supersedes": [
         "implementing-gdpr-data-protection-controls"
       ]
@@ -654,6 +808,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-ISO27001.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/implementing-iso-27001-information-security-management/"
+      ],
       "supersedes": [
         "implementing-iso-27001-information-security-management"
       ]
@@ -664,6 +821,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-NERC-CIP.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/implementing-nerc-cip-compliance-controls/"
+      ],
       "supersedes": []
     },
     {
@@ -672,6 +832,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-NIST-CSF.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-nist-csf-maturity-assessment/"
+      ],
       "supersedes": [
         "performing-nist-csf-maturity-assessment"
       ]
@@ -682,6 +845,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-NIST-RMF.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/executing-nist-rmf-authorization-to-operate/"
+      ],
       "supersedes": [
         "executing-nist-rmf-authorization-to-operate"
       ]
@@ -692,6 +858,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-PCIDSS.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/implementing-pci-dss-compliance-controls/"
+      ],
       "supersedes": [
         "implementing-pci-dss-compliance-controls"
       ]
@@ -702,6 +871,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-RIESGO-80030.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/conducting-cyber-risk-assessment-with-nist-800-30/"
+      ],
       "supersedes": [
         "conducting-cyber-risk-assessment-with-nist-800-30"
       ]
@@ -712,6 +884,9 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-SOC2.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/performing-soc2-type2-audit-preparation/"
+      ],
       "supersedes": []
     },
     {
@@ -720,9 +895,23 @@
       "kind": "lite",
       "card": "skills/CUMPLIMIENTO/SKILL-TPV.md",
       "full": null,
+      "deep": [
+        "skills/_src/mukul-anthropic/managing-third-party-vendor-risk/"
+      ],
       "supersedes": [
         "managing-third-party-vendor-risk"
       ]
+    },
+    {
+      "id": "ctf-ai-ml",
+      "area": "CTF",
+      "kind": "lite",
+      "card": "skills/CTF/SKILL-CTF-AI-ML.md",
+      "full": null,
+      "deep": [
+        "skills/_src/ljagiello-ctf-skills/ctf-ai-ml"
+      ],
+      "supersedes": []
     },
     {
       "id": "ctf-crypto",
@@ -730,6 +919,7 @@
       "kind": "full",
       "card": "skills/CTF/SKILL-CTF-CRYPTO.md",
       "full": "skills/CTF/_full/solving-classical-and-custom-cryptography",
+      "deep": [],
       "supersedes": []
     },
     {
@@ -738,6 +928,18 @@
       "kind": "full",
       "card": "skills/CTF/SKILL-CTF-FORENSE.md",
       "full": "skills/CTF/_full/performing-ctf-forensics-on-audio-and-logs",
+      "deep": [],
+      "supersedes": []
+    },
+    {
+      "id": "ctf-malware",
+      "area": "CTF",
+      "kind": "lite",
+      "card": "skills/CTF/SKILL-CTF-MALWARE.md",
+      "full": null,
+      "deep": [
+        "skills/_src/ljagiello-ctf-skills/ctf-malware"
+      ],
       "supersedes": []
     },
     {
@@ -746,6 +948,42 @@
       "kind": "full",
       "card": "skills/CTF/SKILL-CTF-METODOLOGIA.md",
       "full": "skills/CTF/_full/solving-ctf-challenges-systematically",
+      "deep": [],
+      "supersedes": []
+    },
+    {
+      "id": "ctf-misc",
+      "area": "CTF",
+      "kind": "lite",
+      "card": "skills/CTF/SKILL-CTF-MISC.md",
+      "full": null,
+      "deep": [
+        "skills/_src/ljagiello-ctf-skills/ctf-misc"
+      ],
+      "supersedes": []
+    },
+    {
+      "id": "ctf-orquestacion",
+      "area": "CTF",
+      "kind": "lite",
+      "card": "skills/CTF/SKILL-CTF-ORQUESTACION.md",
+      "full": null,
+      "deep": [
+        "skills/_src/ljagiello-ctf-skills/solve-challenge",
+        "skills/_src/ljagiello-ctf-skills/ctf-writeup",
+        "skills/_src/ljagiello-ctf-skills/ctf-similar-search"
+      ],
+      "supersedes": []
+    },
+    {
+      "id": "ctf-osint",
+      "area": "CTF",
+      "kind": "lite",
+      "card": "skills/CTF/SKILL-CTF-OSINT.md",
+      "full": null,
+      "deep": [
+        "skills/_src/ljagiello-ctf-skills/ctf-osint"
+      ],
       "supersedes": []
     },
     {
@@ -754,6 +992,7 @@
       "kind": "full",
       "card": "skills/CTF/SKILL-CTF-PROMPT-INJECTION.md",
       "full": "skills/CTF/_full/defending-against-prompt-injection-in-ctf-agents",
+      "deep": [],
       "supersedes": []
     },
     {
@@ -762,6 +1001,7 @@
       "kind": "full",
       "card": "skills/CTF/SKILL-CTF-PWN.md",
       "full": "skills/CTF/_full/exploiting-binary-vulnerabilities-in-ctf",
+      "deep": [],
       "supersedes": []
     },
     {
@@ -770,6 +1010,7 @@
       "kind": "full",
       "card": "skills/CTF/SKILL-CTF-REVERSING.md",
       "full": "skills/CTF/_full/reversing-obfuscated-binaries-and-vms",
+      "deep": [],
       "supersedes": []
     },
     {
@@ -778,6 +1019,18 @@
       "kind": "full",
       "card": "skills/CTF/SKILL-CTF-STEGO.md",
       "full": "skills/CTF/_full/analyzing-file-artifacts-for-steganography",
+      "deep": [],
+      "supersedes": []
+    },
+    {
+      "id": "ctf-web",
+      "area": "CTF",
+      "kind": "lite",
+      "card": "skills/CTF/SKILL-CTF-WEB.md",
+      "full": null,
+      "deep": [
+        "skills/_src/ljagiello-ctf-skills/ctf-web"
+      ],
       "supersedes": []
     }
   ]
