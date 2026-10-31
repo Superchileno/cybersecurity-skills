@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""ctf-arsenal — despachador de scripts del área CTF.
+
+Uso:
+    ctf-arsenal --list
+    ctf-arsenal triage archivo [archivo...]
+    ctf-arsenal <comando> [argumentos del script...]
+
+Resuelve su propia ubicación y ejecuta el script correspondiente dentro de
+`skills/CTF/_full/<skill>/scripts/`, por lo que funciona igual en el repositorio
+y una vez copiado el árbol completo.
+"""
+from __future__ import annotations
+
+import os
+import subprocess
+import sys
+
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+FULL = os.path.join(BASE, "_full")
+
+# comando -> (skill, script, descripción)
+COMANDOS = {
+    "triage": ("solving-ctf-challenges-systematically", "scripts/ctf_triage.py",
+               "Identifica tipo, hashes, firmas y cola anexada de un artefacto"),
+    "flag": ("solving-ctf-challenges-systematically", "scripts/verify_flag.py",
+             "Extrae y clasifica candidatos a flag en archivos o directorios"),
+    "carve": ("analyzing-file-artifacts-for-steganography", "scripts/carve_appended.py",
+              "Extrae datos tras el fin lógico (IEND/EOI/EOF) y ZIP anexados"),
+    "lsb": ("analyzing-file-artifacts-for-steganography", "scripts/lsb_extract.py",
+            "Extrae el LSB de una imagen (bit, orden y canal configurables)"),
+    "ooxml": ("analyzing-file-artifacts-for-steganography", "scripts/ooxml_scan.py",
+              "Escanea DOCX/XLSX/PPTX: texto blanco, customXml y blobs"),
+    "zip": ("analyzing-file-artifacts-for-steganography", "scripts/zip_nested.py",
+            "Desanida ZIPs recursivamente en memoria"),
+    "pattern": ("analyzing-file-artifacts-for-steganography", "scripts/reveal_pattern.py",
+                "Revela texto oculto en imágenes con patrón periódico"),
+    "xor": ("solving-classical-and-custom-cryptography", "scripts/xor_tool.py",
+            "XOR: clave repetida, par conocido, diff y fuerza bruta"),
+    "vigenere": ("solving-classical-and-custom-cryptography", "scripts/vigenere.py",
+                 "Vigenère y César con crib y variantes de avance"),
+    "crib": ("solving-classical-and-custom-cryptography", "scripts/crib_drag.py",
+             "Crib-dragging para recuperar keystream y clave"),
+    "decode": ("solving-classical-and-custom-cryptography", "scripts/decode_chain.py",
+               "Cadena automática de codificaciones y compresiones"),
+    "glyph": ("solving-classical-and-custom-cryptography", "scripts/glyph_catalog.py",
+              "Decodifica láminas de glifos con catálogo y lámina de control"),
+    "spectrogram": ("performing-ctf-forensics-on-audio-and-logs", "scripts/spectrogram.py",
+                    "Genera espectrogramas de un audio"),
+    "tones": ("performing-ctf-forensics-on-audio-and-logs", "scripts/tone_nibbles.py",
+              "Decodifica tonos duales (nibbles) por FFT"),
+    "pcm-lsb": ("performing-ctf-forensics-on-audio-and-logs", "scripts/pcm_lsb.py",
+                "Extrae el LSB de las muestras PCM de un WAV"),
+    "logs": ("performing-ctf-forensics-on-audio-and-logs", "scripts/correlate_logs.py",
+             "Correlaciona proxy+backend o cuenta eventos CEF"),
+    "mft": ("performing-ctf-forensics-on-audio-and-logs", "scripts/mft_dat.py",
+            "Cruza MFT+USN+espacio no asignado para recuperar archivos"),
+    "checksec": ("exploiting-binary-vulnerabilities-in-ctf", "scripts/checksec_summary.sh",
+                 "Reconocimiento de un binario: protecciones, secciones y cadenas"),
+    "offset": ("exploiting-binary-vulnerabilities-in-ctf", "scripts/offset_finder.py",
+               "Encuentra el offset hasta RIP y valida el umbral de crash"),
+    "fmtstr": ("exploiting-binary-vulnerabilities-in-ctf", "scripts/fmtstr_write.py",
+               "Construye payloads de format string con %n/%hn"),
+    "ret2win": ("exploiting-binary-vulnerabilities-in-ctf", "scripts/ret2win.py",
+                "Exploit ret2win con validación local y remota"),
+    "srop": ("exploiting-binary-vulnerabilities-in-ctf", "scripts/srop_execve.py",
+             "Exploit SROP: execve vía rt_sigreturn"),
+    "find-main": ("reversing-obfuscated-binaries-and-vms", "scripts/find_main.py",
+                  "Localiza main y posibles tablas de saltos"),
+    "tables": ("reversing-obfuscated-binaries-and-vms", "scripts/extract_tables.py",
+               "Extrae y clasifica tablas de bytes de un ELF"),
+    "oracle": ("reversing-obfuscated-binaries-and-vms", "scripts/oracle_bruteforce.py",
+               "Fuerza bruta por posición con oráculo de instrucciones o salida"),
+    "scan-injection": ("defending-against-prompt-injection-in-ctf-agents",
+                       "scripts/scan_prompt_injection.py",
+                       "Escanea contenido en busca de directivas para agentes de IA"),
+}
+
+
+def listar() -> None:
+    ancho = max(len(c) for c in COMANDOS)
+    print("ctf-arsenal — comandos disponibles\n")
+    for cmd, (_, _, desc) in sorted(COMANDOS.items()):
+        print(f"  {cmd:<{ancho}}  {desc}")
+    print("\nEjemplo: ctf-arsenal triage reto.png")
+    print("Ayuda de un script: ctf-arsenal <comando> --help")
+
+
+def main() -> int:
+    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help", "list", "--list"):
+        listar()
+        return 0
+
+    cmd = sys.argv[1]
+    if cmd not in COMANDOS:
+        print(f"[!] comando desconocido: {cmd}", file=sys.stderr)
+        print("    usa: ctf-arsenal --list", file=sys.stderr)
+        return 2
+
+    skill, script, _ = COMANDOS[cmd]
+    ruta = os.path.join(FULL, skill, script)
+    if not os.path.isfile(ruta):
+        print(f"[!] no se encuentra el script: {ruta}", file=sys.stderr)
+        return 3
+
+    if ruta.endswith(".sh"):
+        argv = ["bash", ruta, *sys.argv[2:]]
+    else:
+        argv = [sys.executable, ruta, *sys.argv[2:]]
+
+    try:
+        return subprocess.call(argv)
+    except KeyboardInterrupt:
+        return 130
+
+
+if __name__ == "__main__":
+    sys.exit(main())
