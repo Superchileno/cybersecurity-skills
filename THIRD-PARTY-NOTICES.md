@@ -63,6 +63,22 @@ https://github.com/mukul975/Anthropic-Cybersecurity-Skills
   `references/` y `scripts/`. No se incluye aquí el texto completo de la
   licencia Apache-2.0; referirse al repositorio de origen.
 
+## 4) `skills/CTF/` — obra propia derivada
+
+Las 7 tarjetas del área CTF y sus skills completas en `skills/CTF/_full/` son
+**obra propia** de este proyecto, derivadas de la resolución de desafíos en
+competiciones de CTF reales.
+
+- **Licencia**: MIT (igual que el resto de tarjetas propias).
+- **Sanitización**: el contenido publicado fue procesado con `tools/sanitize.py`
+  para eliminar flags, hosts, direcciones IP, credenciales, shortlinks y nombres
+  de retos. Se conserva únicamente la técnica, los comandos y las lecciones.
+- **Scripts**: los `scripts/` del área CTF son genéricos y parametrizables; no
+  contienen datos de objetivos reales.
+- **Limitación**: no se publican writeups con flags de eventos activos. Si se
+  añaden casos de estudio, deben sanearse antes de commitear
+  (`python tools/sanitize.py --path <ruta> --check`).
+
 ---
 
 ## Resumen
@@ -72,6 +88,7 @@ https://github.com/mukul975/Anthropic-Cybersecurity-Skills
 | hermes-security | Nous Research / hermes-ai.net | propia de Hermes | `skills/_src/hermes-security/` |
 | recon-skills | uphiago/recon-skills | MIT | `skills/_src/recon-skills/` |
 | mukul-anthropic | mukul975/Anthropic-Cybersecurity-Skills | Apache-2.0 | `skills/_src/mukul-anthropic/` |
+| CTF | Obra propia (derivada de retos resueltos, saneada) | MIT | `skills/CTF/` |
 
 Si reproducís o modificás cualquiera de estos packs, respetá las licencias
 originales e indicá las modificaciones.

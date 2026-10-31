@@ -67,12 +67,25 @@ fuente completa vive en `skills/_src/`:
 - `skills/BLUETEAM/` — 15 tarjetas de detección/hunting/IR (Sigma, Elastic, Cobalt Strike, Chainsaw, DCSync, Splunk, Golden Ticket, LOLBins, Wazuh, SOAR, ransomware, purple team, Velociraptor, SIEM)
 - `skills/FORENSE/` — oss-forensics (supply-chain), recuperación de commits, IOCs + volatility, autopsy, hayabusa, kape, dd, hindsight, zimmerman, plaso, foremost, ghidra, rootkits, yara
 - `skills/CUMPLIMIENTO/` — cmmc, iso27001, pcidss, gdpr, nist-rmf, riesgo-80030, nist-csf, soc2, tpv, nerc-cip
+- `skills/CTF/` — 7 tarjetas con skill completa en `_full/` (stego, crypto, forense, pwn, reversing, prompt injection, metodología) y `bin/ctf-arsenal`
 - `skills/_src/recon-skills/` — 145 SKILL.md fuente del pack recon-skills
 - `skills/_src/hermes-security/` — web-pentest, oss-forensics, sherlock (oficiales)
 - `skills/_src/mukul-anthropic/` — 54 skills curadas del repo mukul975 (Apache-2.0)
 
 Ante una tarea nueva: consultar el `INDEX.md` del área para elegir la subskill y
 enrutar al `_src` si se necesita detalle. Las tarjetas respetan estos guardrails.
+
+En CTF, el detalle ejecutable está en `skills/CTF/_full/` y se invoca con
+`skills/CTF/bin/ctf-arsenal <comando>`. Instalación como skills cargables:
+
+```bash
+python scripts/install_skills.py --repo . --area CTF --dest ~/.agents/skills
+python scripts/install_skills.py --repo . --only web-sqli,forense-yara
+```
+
+El manifiesto `manifest.json` es la fuente de verdad; se regenera con
+`python tools/build_manifest.py --repo .` y se valida con
+`python scripts/validate_skills.py --repo .`.
 
 ## Prohibido
 

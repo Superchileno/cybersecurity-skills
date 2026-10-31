@@ -32,6 +32,34 @@ Rol: navegación. Cada área tiene un `INDEX.md` con:
 - Sección **Enrutado al `_src`**: cuándo ir al detalle completo del pack fuente.
 - Sección **Recuerda (guardrails)** con las limitaciones específicas del área.
 
+## 2.1) Frontmatter YAML — REQUERIDO
+
+Toda tarjeta empieza con un bloque YAML que permite instalarla como skill
+cargable por un agente:
+
+```yaml
+---
+name: web-sqli
+description: 'Qué hace y cuándo usarla. Keywords: SQL injection, SQLi, WAF bypass.'
+area: WEB
+tags: [sqli, injection, web]
+source: _src/recon-skills/redteam/hunt-sqli
+license: Apache-2.0
+---
+```
+
+Reglas:
+
+- `name` = `<área>-<slug>` en minúsculas (`web-sqli`, `forense-volatility`,
+  `ctf-pwn`). Debe ser único en todo el repositorio.
+- `description` ≤ 1024 caracteres, en español, con **keywords en inglés** al final
+  para mejorar el enrutamiento del agente.
+- `area` debe coincidir con la carpeta.
+- `source` es opcional: `_src/...` para material de terceros o `_full/...` para
+  skills completas del área CTF.
+- El bloque se coloca **antes** del `# SKILL-...`; GitHub lo renderiza como tabla.
+- El frontmatter es aditivo: no cambia las secciones 3.1–3.7.
+
 ## 3) Tarjeta `SKILL-<SLUG>.md`
 
 Estructura fija (secciones en orden). Las secciones opcionales se omiten cuando
@@ -121,3 +149,24 @@ Parámetros/paths en web/API que parecen consultar una BD (IDs, búsquedas, filt
 
 Si creas tarjetas nuevas con este formato, considera añadirlas al `INDEX.md` del
 área correspondiente y registrarlas en `docs/CATALOGO-SKILLS.md`.
+
+---
+
+## 6) Modo lite y modo full
+
+| Modo | Artefacto | Cuándo |
+|---|---|---|
+| **lite** | Solo la tarjeta `SKILL-<SLUG>.md` | Cobertura amplia y resumida |
+| **full** | `skills/CTF/_full/<skill>/` con `SKILL.md`, `references/`, `scripts/`, `assets/` | Técnica que necesita procedimiento largo y código ejecutable |
+
+Reglas:
+
+- El `manifest.json` declara `kind` (`lite`/`full`) y la ruta de cada variante.
+- Precedencia al instalar: **full > lite**. Si existe versión completa, se copia
+  el árbol; si no, se materializa la tarjeta como `<id>/SKILL.md`.
+- Regenerar el manifiesto tras añadir o mover tarjetas:
+  `python tools/build_manifest.py --repo .`
+- Validar antes de publicar:
+  `python scripts/validate_skills.py --repo . --verbose`
+- Instalar:
+  `python scripts/install_skills.py --repo . --area CTF --dest ~/.agents/skills`

@@ -1,6 +1,6 @@
 # Catálogo de skills
 
-Listado completo de las **80 tarjetas** de este repositorio, por área.
+Listado completo de las **87 tarjetas** de este repositorio, por área.
 Cada fila: tarjeta, cuándo usarla y fuente de detalle (si aplica).
 
 ## REDTEAM — pentest ofensivo (12)
@@ -118,7 +118,21 @@ Cada fila: tarjeta, cuándo usarla y fuente de detalle (si aplica).
 | `SKILL-TPV.md` | Gestión de riesgo de terceros | `managing-third-party-vendor-risk` |
 | `SKILL-NERC-CIP.md` | Cumplimiento NERC CIP (sector eléctrico) | `implementing-nerc-cip-compliance-controls` |
 
+## CTF — retos y explotación (7, con arsenal ejecutable)
+
+| Tarjeta | Cuándo usarla | Skill completa |
+|---|---|---|
+| `SKILL-CTF-METODOLOGIA.md` | Punto de entrada: triaje, clasificación, writeup | `_full/solving-ctf-challenges-systematically` |
+| `SKILL-CTF-STEGO.md` | Polyglots, LSB, OOXML, mosaicos, capas | `_full/analyzing-file-artifacts-for-steganography` |
+| `SKILL-CTF-CRYPTO.md` | XOR, two-time pad, Vigenère, catálogos | `_full/solving-classical-and-custom-cryptography` |
+| `SKILL-CTF-FORENSE.md` | Audio, CEF, pcap, MFT/USN | `_full/performing-ctf-forensics-on-audio-and-logs` |
+| `SKILL-CTF-PWN.md` | Format string, ret2win, SROP, heap, kernel | `_full/exploiting-binary-vulnerabilities-in-ctf` |
+| `SKILL-CTF-REVERSING.md` | Binarios stripped, tablas, VMs, oráculos | `_full/reversing-obfuscated-binaries-and-vms` |
+| `SKILL-CTF-PROMPT-INJECTION.md` | Directivas ocultas dirigidas a agentes de IA | `_full/defending-against-prompt-injection-in-ctf-agents` |
+
+Arsenal: `skills/CTF/bin/ctf-arsenal` (26 comandos, `--list`).
+
 ---
 
-**Total: 80 tarjetas.** Para el detalle completo de cada fuente, ver
+**Total: 87 tarjetas.** Para el detalle completo de cada fuente, ver
 [`THIRD-PARTY-NOTICES.md`](../THIRD-PARTY-NOTICES.md) y `skills/_src/`.
