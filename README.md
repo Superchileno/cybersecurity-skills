@@ -1,6 +1,6 @@
 # 🔐 cybersecurity-skills — Biblioteca de habilidades de ciberseguridad
 
-Colección de **87 tarjetas de habilidades** (skills) listas para usar por un
+Colección de **93 tarjetas de habilidades** (skills) listas para usar por un
 asistente de IA en tareas de ciberseguridad: cumplimiento, seguridad de la
 información, blue team, pentesting y **CTF**. Cada tarjeta es un archivo Markdown
 estructurado (`SKILL-*.md`) que distila el "cuándo usarla", el procedimiento,
@@ -8,7 +8,8 @@ la clasificación de hallazgos, las herramientas y los *guardrails*.
 
 Todas las tarjetas llevan **frontmatter YAML** y pueden instalarse como skills
 cargables con `scripts/install_skills.py`. El área `CTF` incluye además la skill
-completa y ejecutable (referencias, scripts y un CLI de arsenal).
+completa y ejecutable (referencias, scripts y un CLI de arsenal), y material de
+profundidad vendorizado en `skills/_src/ljagiello-ctf-skills/`.
 
 > ⚠️ **Uso responsable.** Este repositorio es material educativo y operativo
 > para profesionales y estudiantes de seguridad. Solo úsalo contra sistemas
@@ -27,12 +28,12 @@ completa y ejecutable (referencias, scripts y un CLI de arsenal).
 | [`skills/BLUETEAM/`](skills/BLUETEAM/INDEX.md) | 14 | Detección, hunting, SIEM, SOAR, IR |
 | [`skills/FORENSE/`](skills/FORENSE/INDEX.md) | 15 | Memoria, disco, timelines, malware, YARA |
 | [`skills/CUMPLIMIENTO/`](skills/CUMPLIMIENTO/INDEX.md) | 10 | Marcos normativos y gestión de riesgo |
-| [`skills/CTF/`](skills/CTF/INDEX.md) | 7 | Retos: stego, crypto, forense, pwn, reversing, prompt injection |
+| [`skills/CTF/`](skills/CTF/INDEX.md) | 13 | Retos: stego, crypto, forense, pwn, reversing, web, misc, AI/ML, malware, OSINT, orquestación |
 | `docs/` | — | Formato, catálogo y KB del proyecto |
 | `skills/_src/` | — | Fuentes completas (packs de terceros) |
 | `skills/CTF/_full/` | — | Skills CTF completas y ejecutables |
 
-**Catálogo detallado de las 87 tarjetas:** [`docs/CATALOGO-SKILLS.md`](docs/CATALOGO-SKILLS.md)
+**Catálogo detallado de las 93 tarjetas:** [`docs/CATALOGO-SKILLS.md`](docs/CATALOGO-SKILLS.md)
 
 ---
 
@@ -99,13 +100,17 @@ python scripts/install_skills.py --repo . --area CTF --dest ~/.agents/skills
 # Una o varias skills concretas
 python scripts/install_skills.py --repo . --only web-sqli,redes-subdominios
 
-# Todas las áreas (87 skills)
+# Todas las áreas (93 skills)
 python scripts/install_skills.py --repo . --area all --dest ~/.agents/skills
+
+# Skill con material de profundidad vendorizado (copia _src/ a references/)
+python scripts/install_skills.py --repo . --only ctf-web --with-deep
 ```
 
 Cada skill se materializa como `<dest>/<id>/SKILL.md` (las CTF con su árbol
-completo). Verifica antes con `--dry-run` y usa `--prune-superseded` si tu
-entorno ya tenía skills equivalentes.
+completo). Con `--with-deep` las tarjetas puente del área CTF copian además su
+material vendorizado a `<dest>/<id>/references/`. Verifica antes con `--dry-run`
+y usa `--prune-superseded` si tu entorno ya tenía skills equivalentes.
 
 ### Arsenal CTF
 
@@ -135,7 +140,7 @@ Para **crear tus propias tarjetas** siguiendo el mismo formato: leer
 
 ## 📚 Atribución de fuentes (`skills/_src/`)
 
-El repositorio incluye las fuentes completas de tres packs de terceros con su
+El repositorio incluye las fuentes completas de cuatro packs de terceros con su
 respectiva licencia. Detalle en
 [`THIRD-PARTY-NOTICES.md`](THIRD-PARTY-NOTICES.md):
 
@@ -144,8 +149,9 @@ respectiva licencia. Detalle en
 | `_src/hermes-security/` | Hermes Agent (Nous Research) — skills oficiales web-pentest, oss-forensics, sherlock | propia de Hermes (ver origen) |
 | `_src/recon-skills/` | [uphiago/recon-skills](https://github.com/uphiago/recon-skills) (145 SKILL.md) | MIT |
 | `_src/mukul-anthropic/` | [mukul975/Anthropic-Cybersecurity-Skills](https://github.com/mukul975/Anthropic-Cybersecurity-Skills) (54 skills curadas de 817) | Apache-2.0 |
+| `_src/ljagiello-ctf-skills/` | [ljagiello/ctf-skills](https://github.com/ljagiello/ctf-skills) (web, misc, AI/ML, malware, OSINT y orquestadores) | MIT |
 
-Las **87 tarjetas destiladas** (`skills/<AREA>/SKILL-*.md`) y los `INDEX.md`
+Las **93 tarjetas destiladas** (`skills/<AREA>/SKILL-*.md`) y los `INDEX.md`
 son obra de este proyecto y se distribuyen bajo **MIT** (ver [`LICENSE`](LICENSE)).
 
 El área `CTF` (`skills/CTF/`) es obra propia derivada de desafíos resueltos en

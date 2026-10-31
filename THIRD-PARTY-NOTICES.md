@@ -65,9 +65,9 @@ https://github.com/mukul975/Anthropic-Cybersecurity-Skills
 
 ## 4) `skills/CTF/` — obra propia derivada
 
-Las 7 tarjetas del área CTF y sus skills completas en `skills/CTF/_full/` son
-**obra propia** de este proyecto, derivadas de la resolución de desafíos en
-competiciones de CTF reales.
+Las 7 tarjetas ejecutables del área CTF y sus skills completas en
+`skills/CTF/_full/` son **obra propia** de este proyecto, derivadas de la
+resolución de desafíos en competiciones de CTF reales.
 
 - **Licencia**: MIT (igual que el resto de tarjetas propias).
 - **Sanitización**: el contenido publicado fue procesado con `tools/sanitize.py`
@@ -81,6 +81,37 @@ competiciones de CTF reales.
 
 ---
 
+## 5) `skills/_src/ljagiello-ctf-skills/` — ljagiello/ctf-skills (MIT)
+
+Material de profundidad para las categorías CTF que este proyecto no cubría.
+Origen: https://github.com/ljagiello/ctf-skills
+
+- **Commit vendorizado**: `a6106aaf5f1f4eeb6b95908f11c2314c7150dfac`
+  (2026-10-30). Ver `skills/_src/ljagiello-ctf-skills/VENDOR.md`.
+- **Autor original**: Lukasz Jagiello.
+- **Licencia**: MIT. El texto completo está en
+  `skills/_src/ljagiello-ctf-skills/LICENSE`.
+- **Alcance copiado**: `ctf-web/`, `ctf-misc/`, `ctf-ai-ml/`, `ctf-malware/`,
+  `ctf-osint/`, `solve-challenge/`, `ctf-writeup/`, `ctf-similar-search/` y
+  `scripts/install_ctf_tools.sh`.
+- **No copiado**: `.github/`, `evals/`, `tests/`, `pyproject.toml`, metadatos de
+  su proyecto y los scripts de infraestructura (`generate_catalog.py`,
+  `skill_security_auditor.py`, `verify_crypto_examples.py`). Tampoco se
+  vendorizaron `ctf-pwn/`, `ctf-crypto/`, `ctf-reverse/` ni `ctf-forensics/`,
+  que este repositorio cubre con material propio.
+- **Modificaciones locales**: ninguna sobre el contenido técnico. Se añadió
+  `VENDOR.md` (procedencia y alcance) y no se alteraron los archivos originales.
+- **Saneamiento**: revisado con `tools/sanitize.py` y búsqueda dirigida de
+  flags. El único texto con forma de flag es un marcador explícitamente falso
+  (`MetaCTF{fake_banner_flag_here}`) del material original.
+- **Uso**: `scripts/install_ctf_tools.sh` se conserva como referencia y **no se
+  ejecuta** desde este repositorio.
+
+Las tarjetas puente `SKILL-CTF-{WEB,MISC,AI-ML,MALWARE,OSINT,ORQUESTACION}.md`
+son obra propia: resumen la técnica en español y enrutan al material anterior.
+
+---
+
 ## Resumen
 
 | Pack | Origen | Licencia | Incluido |
@@ -88,6 +119,7 @@ competiciones de CTF reales.
 | hermes-security | Nous Research / hermes-ai.net | propia de Hermes | `skills/_src/hermes-security/` |
 | recon-skills | uphiago/recon-skills | MIT | `skills/_src/recon-skills/` |
 | mukul-anthropic | mukul975/Anthropic-Cybersecurity-Skills | Apache-2.0 | `skills/_src/mukul-anthropic/` |
+| ljagiello-ctf-skills | ljagiello/ctf-skills | MIT | `skills/_src/ljagiello-ctf-skills/` |
 | CTF | Obra propia (derivada de retos resueltos, saneada) | MIT | `skills/CTF/` |
 
 Si reproducís o modificás cualquiera de estos packs, respetá las licencias

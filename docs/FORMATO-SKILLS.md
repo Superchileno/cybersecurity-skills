@@ -55,8 +55,9 @@ Reglas:
 - `description` ≤ 1024 caracteres, en español, con **keywords en inglés** al final
   para mejorar el enrutamiento del agente.
 - `area` debe coincidir con la carpeta.
-- `source` es opcional: `_src/...` para material de terceros o `_full/...` para
-  skills completas del área CTF.
+- `source` es opcional: `_src/...` para material de terceros vendorizado (se
+  refleja en el campo `deep` del manifiesto) o `_full/...` para skills completas
+  del área CTF.
 - El bloque se coloca **antes** del `# SKILL-...`; GitHub lo renderiza como tabla.
 - El frontmatter es aditivo: no cambia las secciones 3.1–3.7.
 
@@ -152,18 +153,27 @@ Si creas tarjetas nuevas con este formato, considera añadirlas al `INDEX.md` de
 
 ---
 
-## 6) Modo lite y modo full
+## 6) Modo lite, modo full y profundidad vendorizada
 
 | Modo | Artefacto | Cuándo |
 |---|---|---|
 | **lite** | Solo la tarjeta `SKILL-<SLUG>.md` | Cobertura amplia y resumida |
 | **full** | `skills/CTF/_full/<skill>/` con `SKILL.md`, `references/`, `scripts/`, `assets/` | Técnica que necesita procedimiento largo y código ejecutable |
+| **deep** | `skills/_src/<pack>/<dir>/` declarado en la tarjeta con `source: _src/...` | Categoría que se cubre con material de terceros vendorizado |
 
 Reglas:
 
-- El `manifest.json` declara `kind` (`lite`/`full`) y la ruta de cada variante.
-- Precedencia al instalar: **full > lite**. Si existe versión completa, se copia
-  el árbol; si no, se materializa la tarjeta como `<id>/SKILL.md`.
+- El `manifest.json` declara `kind` (`lite`/`full`), la ruta de la tarjeta
+  (`card`), la del árbol completo (`full`) y la lista de material vendorizado
+  (`deep`, puede estar vacía).
+- `deep` es una **lista**: si el material vive en varios directorios, `source`
+  los separa por comas.
+- Precedencia al instalar: **full > deep > lite**. Si existe versión completa, se
+  copia el árbol; si no, se materializa la tarjeta como `<id>/SKILL.md` y, con
+  `--with-deep`, se copia cada directorio de `deep` en
+  `<id>/references/<nombre-del-directorio>/`.
+- Todo `deep` debe estar bajo `skills/_src/` y contener `SKILL.md`; el validador
+  lo comprueba y avisa si detecta texto con forma de flag.
 - Regenerar el manifiesto tras añadir o mover tarjetas:
   `python tools/build_manifest.py --repo .`
 - Validar antes de publicar:

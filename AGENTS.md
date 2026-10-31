@@ -67,25 +67,31 @@ fuente completa vive en `skills/_src/`:
 - `skills/BLUETEAM/` — 15 tarjetas de detección/hunting/IR (Sigma, Elastic, Cobalt Strike, Chainsaw, DCSync, Splunk, Golden Ticket, LOLBins, Wazuh, SOAR, ransomware, purple team, Velociraptor, SIEM)
 - `skills/FORENSE/` — oss-forensics (supply-chain), recuperación de commits, IOCs + volatility, autopsy, hayabusa, kape, dd, hindsight, zimmerman, plaso, foremost, ghidra, rootkits, yara
 - `skills/CUMPLIMIENTO/` — cmmc, iso27001, pcidss, gdpr, nist-rmf, riesgo-80030, nist-csf, soc2, tpv, nerc-cip
-- `skills/CTF/` — 7 tarjetas con skill completa en `_full/` (stego, crypto, forense, pwn, reversing, prompt injection, metodología) y `bin/ctf-arsenal`
+- `skills/CTF/` — 13 tarjetas: 7 con skill completa en `_full/` (stego, crypto, forense, pwn, reversing, prompt injection, metodología) y 6 puente con profundidad vendorizada (web, misc, ai-ml, malware, osint, orquestación) + `bin/ctf-arsenal`
 - `skills/_src/recon-skills/` — 145 SKILL.md fuente del pack recon-skills
 - `skills/_src/hermes-security/` — web-pentest, oss-forensics, sherlock (oficiales)
 - `skills/_src/mukul-anthropic/` — 54 skills curadas del repo mukul975 (Apache-2.0)
+- `skills/_src/ljagiello-ctf-skills/` — material de profundidad CTF del repo ljagiello/ctf-skills (MIT): web, misc, ai-ml, malware, osint y orquestadores
 
 Ante una tarea nueva: consultar el `INDEX.md` del área para elegir la subskill y
 enrutar al `_src` si se necesita detalle. Las tarjetas respetan estos guardrails.
 
 En CTF, el detalle ejecutable está en `skills/CTF/_full/` y se invoca con
-`skills/CTF/bin/ctf-arsenal <comando>`. Instalación como skills cargables:
+`skills/CTF/bin/ctf-arsenal <comando>`. Las tarjetas puente (`ctf-web`,
+`ctf-misc`, `ctf-ai-ml`, `ctf-malware`, `ctf-osint`, `ctf-orquestacion`)
+enrutan a `skills/_src/ljagiello-ctf-skills/`; su profundidad solo se copia al
+instalar si se usa `--with-deep`. Instalación como skills cargables:
 
 ```bash
 python scripts/install_skills.py --repo . --area CTF --dest ~/.agents/skills
 python scripts/install_skills.py --repo . --only web-sqli,forense-yara
+python scripts/install_skills.py --repo . --only ctf-web --with-deep
 ```
 
 El manifiesto `manifest.json` es la fuente de verdad; se regenera con
 `python tools/build_manifest.py --repo .` y se valida con
-`python scripts/validate_skills.py --repo .`.
+`python scripts/validate_skills.py --repo .`. Cada entrada puede tener
+`deep: [skills/_src/...]`, validado igual que `full`.
 
 ## Prohibido
 
