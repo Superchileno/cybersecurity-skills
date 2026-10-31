@@ -142,9 +142,18 @@ def main() -> int:
             print("[!] falta manifest.json")
             return 1
         with open(ruta, "r", encoding="utf-8") as fh:
-            actual = fh.read()
-        if actual != nuevo:
+            actual = json.load(fh)
+        # `generated` es informativo (depende del huso horario del runner)
+        a = {k: v for k, v in actual.items() if k != "generated"}
+        b = {k: v for k, v in datos.items() if k != "generated"}
+        if a != b:
             print("[!] manifest.json desfasado; ejecuta build_manifest.py")
+            faltan = {s["id"] for s in b["skills"]} - {s["id"] for s in a["skills"]}
+            sobran = {s["id"] for s in a["skills"]} - {s["id"] for s in b["skills"]}
+            if faltan:
+                print(f"    faltan: {sorted(faltan)}")
+            if sobran:
+                print(f"    sobran: {sorted(sobran)}")
             return 1
         print("[+] manifest.json actualizado")
         return 0
