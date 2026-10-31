@@ -1,6 +1,6 @@
 # Convención de carpetas, documentación y backups
 
-Regla heredada del proyecto `el proyecto`: **ningún cambio queda sin copia local
+Regla de trabajo: **ningún cambio queda sin copia local
 y sin registro en el contexto**. Aplicada a CTF significa que el writeup es parte
 del entregable, no un extra.
 
