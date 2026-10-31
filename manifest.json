@@ -1,0 +1,784 @@
+{
+  "version": 1,
+  "generated": "2026-10-30",
+  "areas": [
+    "REDTEAM",
+    "REDES",
+    "WEB",
+    "OSINT",
+    "BLUETEAM",
+    "FORENSE",
+    "CUMPLIMIENTO",
+    "CTF"
+  ],
+  "skills": [
+    {
+      "id": "redteam-ad",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-AD.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-c2-havoc",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-C2-HAVOC.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-c2-redirect",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-C2-REDIRECT.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-c2-sliver",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-C2-SLIVER.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-cadenas",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-CADENAS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-entra-attack",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-ENTRA-ATTACK.md",
+      "full": null,
+      "supersedes": [
+        "attacking-entra-id-with-roadtools"
+      ]
+    },
+    {
+      "id": "redteam-eternalblue",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-ETERNALBLUE.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-evidencia",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-EVIDENCIA.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-metodologia",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-METODOLOGIA.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-privesc-linux",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-PRIVESC-LINUX.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-pwspray",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-PWSPRAY.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redteam-reporte",
+      "area": "REDTEAM",
+      "kind": "lite",
+      "card": "skills/REDTEAM/SKILL-REPORTE.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redes-bgp-hijack",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-BGP-HIJACK.md",
+      "full": null,
+      "supersedes": [
+        "exploiting-bgp-hijacking-vulnerabilities"
+      ]
+    },
+    {
+      "id": "redes-ct-logs",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-CT-LOGS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redes-fingerprint",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-FINGERPRINT.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redes-origen-ip",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-ORIGEN-IP.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redes-puertos",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-PUERTOS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redes-shodan",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-SHODAN.md",
+      "full": null,
+      "supersedes": [
+        "performing-ip-reputation-analysis-with-shodan"
+      ]
+    },
+    {
+      "id": "redes-ssl-tls",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-SSL-TLS.md",
+      "full": null,
+      "supersedes": [
+        "performing-ssl-tls-security-assessment"
+      ]
+    },
+    {
+      "id": "redes-subdominios",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-SUBDOMINIOS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "redes-vhost",
+      "area": "REDES",
+      "kind": "lite",
+      "card": "skills/REDES/SKILL-VHOST.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-api",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-API.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-enum-web",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-ENUM-WEB.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-hpp",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-HPP.md",
+      "full": null,
+      "supersedes": [
+        "performing-http-parameter-pollution-attack"
+      ]
+    },
+    {
+      "id": "web-idor-ato",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-IDOR-ATO.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-lfi-rce",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-LFI-RCE.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-prompt-leak",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-PROMPT-LEAK.md",
+      "full": null,
+      "supersedes": [
+        "testing-for-system-prompt-leakage"
+      ]
+    },
+    {
+      "id": "web-sqli",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-SQLI.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-ssrf",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-SSRF.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-thick-client",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-THICK-CLIENT.md",
+      "full": null,
+      "supersedes": [
+        "performing-thick-client-application-penetration-test"
+      ]
+    },
+    {
+      "id": "web-upload",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-UPLOAD.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-webpentest",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-WEBPENTEST.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-wpscan",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-WPSCAN.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "web-xml-injection",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-XML-INJECTION.md",
+      "full": null,
+      "supersedes": [
+        "testing-for-xml-injection-vulnerabilities"
+      ]
+    },
+    {
+      "id": "web-xss",
+      "area": "WEB",
+      "kind": "lite",
+      "card": "skills/WEB/SKILL-XSS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "osint-actor-osint",
+      "area": "OSINT",
+      "kind": "lite",
+      "card": "skills/OSINT/SKILL-ACTOR-OSINT.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "osint-gdorks",
+      "area": "OSINT",
+      "kind": "lite",
+      "card": "skills/OSINT/SKILL-GDORKS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "osint-osint",
+      "area": "OSINT",
+      "kind": "lite",
+      "card": "skills/OSINT/SKILL-OSINT.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "osint-secretos",
+      "area": "OSINT",
+      "kind": "lite",
+      "card": "skills/OSINT/SKILL-SECRETOS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "osint-sherlock",
+      "area": "OSINT",
+      "kind": "lite",
+      "card": "skills/OSINT/SKILL-SHERLOCK.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "osint-spiderfoot",
+      "area": "OSINT",
+      "kind": "lite",
+      "card": "skills/OSINT/SKILL-SPIDERFOOT.md",
+      "full": null,
+      "supersedes": [
+        "performing-osint-with-spiderfoot"
+      ]
+    },
+    {
+      "id": "blueteam-beacons",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-BEACONS.md",
+      "full": null,
+      "supersedes": [
+        "hunting-for-cobalt-strike-beacons"
+      ]
+    },
+    {
+      "id": "blueteam-chainsaw",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-CHAINSAW.md",
+      "full": null,
+      "supersedes": [
+        "hunting-evtx-with-chainsaw"
+      ]
+    },
+    {
+      "id": "blueteam-deteccion-dcsync",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-DETECCION-DCSYNC.md",
+      "full": null,
+      "supersedes": [
+        "detecting-dcsync-attack-in-active-directory"
+      ]
+    },
+    {
+      "id": "blueteam-golden-ticket",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-GOLDEN-TICKET.md",
+      "full": null,
+      "supersedes": [
+        "detecting-golden-ticket-attacks-in-kerberos-logs"
+      ]
+    },
+    {
+      "id": "blueteam-hunting-elastic",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-HUNTING-ELASTIC.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "blueteam-lateral-splunk",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-LATERAL-SPLUNK.md",
+      "full": null,
+      "supersedes": [
+        "detecting-lateral-movement-with-splunk"
+      ]
+    },
+    {
+      "id": "blueteam-lotl",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-LOTL.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "blueteam-playbook-ransomware",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-PLAYBOOK-RANSOMWARE.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "blueteam-purple-team",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-PURPLE-TEAM.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "blueteam-siem-use-cases",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-SIEM-USE-CASES.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "blueteam-sigma",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-SIGMA.md",
+      "full": null,
+      "supersedes": [
+        "building-detection-rules-with-sigma"
+      ]
+    },
+    {
+      "id": "blueteam-soar-phantom",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-SOAR-PHANTOM.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "blueteam-velociraptor",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-VELOCIRAPTOR.md",
+      "full": null,
+      "supersedes": [
+        "fleet-hunting-with-velociraptor"
+      ]
+    },
+    {
+      "id": "blueteam-wazuh",
+      "area": "BLUETEAM",
+      "kind": "lite",
+      "card": "skills/BLUETEAM/SKILL-WAZUH.md",
+      "full": null,
+      "supersedes": [
+        "implementing-endpoint-detection-with-wazuh"
+      ]
+    },
+    {
+      "id": "forense-autopsy",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-AUTOPSY.md",
+      "full": null,
+      "supersedes": [
+        "analyzing-disk-image-with-autopsy"
+      ]
+    },
+    {
+      "id": "forense-dd-acquisicion",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-DD-ACQUISICION.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "forense-foremost",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-FOREMOST.md",
+      "full": null,
+      "supersedes": [
+        "performing-file-carving-with-foremost"
+      ]
+    },
+    {
+      "id": "forense-ghidra",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-GHIDRA.md",
+      "full": null,
+      "supersedes": [
+        "reverse-engineering-malware-with-ghidra"
+      ]
+    },
+    {
+      "id": "forense-hayabusa",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-HAYABUSA.md",
+      "full": null,
+      "supersedes": [
+        "generating-forensic-timelines-with-hayabusa"
+      ]
+    },
+    {
+      "id": "forense-hindsight",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-HINDSIGHT.md",
+      "full": null,
+      "supersedes": [
+        "analyzing-browser-forensics-with-hindsight"
+      ]
+    },
+    {
+      "id": "forense-ioc",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-IOC.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "forense-kape",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-KAPE.md",
+      "full": null,
+      "supersedes": [
+        "triaging-windows-with-kape"
+      ]
+    },
+    {
+      "id": "forense-oss-forensics",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-OSS-FORENSICS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "forense-plaso",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-PLASO.md",
+      "full": null,
+      "supersedes": [
+        "building-super-timelines-with-plaso"
+      ]
+    },
+    {
+      "id": "forense-recuperar",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-RECUPERAR.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "forense-rootkits",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-ROOTKITS.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "forense-volatility",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-VOLATILITY.md",
+      "full": null,
+      "supersedes": [
+        "conducting-memory-forensics-with-volatility",
+        "analyzing-memory-dumps-with-volatility"
+      ]
+    },
+    {
+      "id": "forense-yara",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-YARA.md",
+      "full": null,
+      "supersedes": [
+        "performing-threat-hunting-with-yara-rules",
+        "performing-yara-rule-development-for-detection"
+      ]
+    },
+    {
+      "id": "forense-zimmerman",
+      "area": "FORENSE",
+      "kind": "lite",
+      "card": "skills/FORENSE/SKILL-ZIMMERMAN.md",
+      "full": null,
+      "supersedes": [
+        "performing-windows-artifact-analysis-with-eric-zimmerman-tools"
+      ]
+    },
+    {
+      "id": "cumplimiento-cmmc",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-CMMC.md",
+      "full": null,
+      "supersedes": [
+        "achieving-cmmc-level-2-compliance"
+      ]
+    },
+    {
+      "id": "cumplimiento-gdpr",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-GDPR.md",
+      "full": null,
+      "supersedes": [
+        "implementing-gdpr-data-protection-controls"
+      ]
+    },
+    {
+      "id": "cumplimiento-iso27001",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-ISO27001.md",
+      "full": null,
+      "supersedes": [
+        "implementing-iso-27001-information-security-management"
+      ]
+    },
+    {
+      "id": "cumplimiento-nerc-cip",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-NERC-CIP.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "cumplimiento-nist-csf",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-NIST-CSF.md",
+      "full": null,
+      "supersedes": [
+        "performing-nist-csf-maturity-assessment"
+      ]
+    },
+    {
+      "id": "cumplimiento-nist-rmf",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-NIST-RMF.md",
+      "full": null,
+      "supersedes": [
+        "executing-nist-rmf-authorization-to-operate"
+      ]
+    },
+    {
+      "id": "cumplimiento-pcidss",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-PCIDSS.md",
+      "full": null,
+      "supersedes": [
+        "implementing-pci-dss-compliance-controls"
+      ]
+    },
+    {
+      "id": "cumplimiento-riesgo-80030",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-RIESGO-80030.md",
+      "full": null,
+      "supersedes": [
+        "conducting-cyber-risk-assessment-with-nist-800-30"
+      ]
+    },
+    {
+      "id": "cumplimiento-soc2",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-SOC2.md",
+      "full": null,
+      "supersedes": []
+    },
+    {
+      "id": "cumplimiento-tpv",
+      "area": "CUMPLIMIENTO",
+      "kind": "lite",
+      "card": "skills/CUMPLIMIENTO/SKILL-TPV.md",
+      "full": null,
+      "supersedes": [
+        "managing-third-party-vendor-risk"
+      ]
+    },
+    {
+      "id": "ctf-crypto",
+      "area": "CTF",
+      "kind": "full",
+      "card": "skills/CTF/SKILL-CTF-CRYPTO.md",
+      "full": "skills/CTF/_full/solving-classical-and-custom-cryptography",
+      "supersedes": []
+    },
+    {
+      "id": "ctf-forense",
+      "area": "CTF",
+      "kind": "full",
+      "card": "skills/CTF/SKILL-CTF-FORENSE.md",
+      "full": "skills/CTF/_full/performing-ctf-forensics-on-audio-and-logs",
+      "supersedes": []
+    },
+    {
+      "id": "ctf-metodologia",
+      "area": "CTF",
+      "kind": "full",
+      "card": "skills/CTF/SKILL-CTF-METODOLOGIA.md",
+      "full": "skills/CTF/_full/solving-ctf-challenges-systematically",
+      "supersedes": []
+    },
+    {
+      "id": "ctf-prompt-injection",
+      "area": "CTF",
+      "kind": "full",
+      "card": "skills/CTF/SKILL-CTF-PROMPT-INJECTION.md",
+      "full": "skills/CTF/_full/defending-against-prompt-injection-in-ctf-agents",
+      "supersedes": []
+    },
+    {
+      "id": "ctf-pwn",
+      "area": "CTF",
+      "kind": "full",
+      "card": "skills/CTF/SKILL-CTF-PWN.md",
+      "full": "skills/CTF/_full/exploiting-binary-vulnerabilities-in-ctf",
+      "supersedes": []
+    },
+    {
+      "id": "ctf-reversing",
+      "area": "CTF",
+      "kind": "full",
+      "card": "skills/CTF/SKILL-CTF-REVERSING.md",
+      "full": "skills/CTF/_full/reversing-obfuscated-binaries-and-vms",
+      "supersedes": []
+    },
+    {
+      "id": "ctf-stego",
+      "area": "CTF",
+      "kind": "full",
+      "card": "skills/CTF/SKILL-CTF-STEGO.md",
+      "full": "skills/CTF/_full/analyzing-file-artifacts-for-steganography",
+      "supersedes": []
+    }
+  ]
+}
