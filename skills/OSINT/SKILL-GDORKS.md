@@ -1,3 +1,11 @@
+---
+name: osint-gdorks
+description: 'Recon pasivo: encontrar info expuesta no indexada mal en buscadores (archivos, logs, credenciales de muestra). Keywords: gdorks, osint.'
+area: OSINT
+tags: [gdorks, osint]
+license: Apache-2.0
+---
+
 # SKILL-GDORKS.md — Google dorks / OSINT con buscadores
 
 ## Cuándo usarla

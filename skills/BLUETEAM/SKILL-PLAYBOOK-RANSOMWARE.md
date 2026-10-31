@@ -1,3 +1,12 @@
+---
+name: blueteam-playbook-ransomware
+description: 'Construir un playbook de respuesta a ransomware alineado a la guía CISA (publication MS-ISAC 2023/2024). Keywords: blueteam, playbook, ransomware.'
+area: BLUETEAM
+tags: [blueteam, playbook, ransomware]
+source: '_src/mukul-anthropic/building-ransomware-playbook-with-cisa-framework/'
+license: Apache-2.0
+---
+
 # SKILL-PLAYBOOK-RANSOMWARE.md — Playbook ransomware con framework CISA
 
 Fuente: `_src/mukul-anthropic/building-ransomware-playbook-with-cisa-framework/`.

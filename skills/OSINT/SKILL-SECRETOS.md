@@ -1,3 +1,11 @@
+---
+name: osint-secretos
+description: 'Buscar credenciales/API keys/tokens expuestos en repos públicos, CI/CD o artefactos del target (verificación de exposición accidental vs leak intencional). Keywords: osint, secretos.'
+area: OSINT
+tags: [osint, secretos]
+license: Apache-2.0
+---
+
 # SKILL-SECRETOS.md — Caza de secretos en código público
 
 ## Cuándo usarla

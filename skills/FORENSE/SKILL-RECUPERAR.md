@@ -1,3 +1,11 @@
+---
+name: forense-recuperar
+description: 'Force-push borró un commit, PR/issue fue eliminado, o necesitas reconstruir el historial (dentro de una investigación forense autorizada). Keywords: forense, recuperar.'
+area: FORENSE
+tags: [forense, recuperar]
+license: Apache-2.0
+---
+
 # SKILL-RECUPERAR.md — Recuperación de commits/PR/issues borrados
 
 ## Cuándo usarla

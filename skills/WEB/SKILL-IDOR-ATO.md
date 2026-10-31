@@ -1,3 +1,11 @@
+---
+name: web-idor-ato
+description: 'Endpoints con IDs secuenciales/adivinables (`/user/1`, `/order?id=100`), APIs REST, lambda auth, broken function-level auth. Keywords: ato, idor, web.'
+area: WEB
+tags: [ato, idor, web]
+license: Apache-2.0
+---
+
 # SKILL-IDOR-ATO.md — IDOR / Auth flaws / ATO
 
 ## Cuándo usarla

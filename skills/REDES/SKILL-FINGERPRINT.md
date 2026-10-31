@@ -1,3 +1,11 @@
+---
+name: redes-fingerprint
+description: 'Identificar servicios detrás de TLS, detectar WAF/CDN, o evadir detección basada en fingerprint (JA3/JA4) cuando es parte del plan del engagement autorizado. Keywords: fingerprint, redes.'
+area: REDES
+tags: [fingerprint, redes]
+license: Apache-2.0
+---
+
 # SKILL-FINGERPRINT.md — Fingerprinting TLS/HTTP y técnicas de disfraz
 
 ## Cuándo usarla

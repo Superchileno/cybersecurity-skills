@@ -1,3 +1,11 @@
+---
+name: redteam-reporte
+description: 'Generar el informe final de un engagement (fuente: `redteam/report-writing`, `redteam/redteam-report-template`, `skills/_src/.../web-pentest` templates). Keywords: redteam, reporte.'
+area: REDTEAM
+tags: [redteam, reporte]
+license: Apache-2.0
+---
+
 # SKILL-REPORTE.md — Escritura de reportes
 
 ## Cuándo usarla

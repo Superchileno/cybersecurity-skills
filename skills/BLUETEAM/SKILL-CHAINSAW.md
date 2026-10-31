@@ -1,3 +1,12 @@
+---
+name: blueteam-chainsaw
+description: 'Hunting/forense rápido de eventos Windows (evtx) a escala, sin SIEM, con reglas Sigma embebidas. Keywords: blueteam, chainsaw.'
+area: BLUETEAM
+tags: [blueteam, chainsaw]
+source: '_src/mukul-anthropic/hunting-evtx-with-chainsaw/'
+license: Apache-2.0
+---
+
 # SKILL-CHAINSAW.md — Hunting de evtx con Chainsaw
 
 Fuente: `_src/mukul-anthropic/hunting-evtx-with-chainsaw/`.

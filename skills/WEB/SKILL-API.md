@@ -1,3 +1,11 @@
+---
+name: web-api
+description: 'APIs REST/GraphQL/gRPC, flujos sin auth, misconfigs de endpoints, schema enum. Keywords: api, web.'
+area: WEB
+tags: [api, web]
+license: Apache-2.0
+---
+
 # SKILL-API.md — API security hunting
 
 ## Cuándo usarla

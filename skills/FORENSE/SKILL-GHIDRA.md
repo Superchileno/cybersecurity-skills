@@ -1,3 +1,12 @@
+---
+name: forense-ghidra
+description: 'Análisis estático de binarios maliciosos (funciones, strings, C2, técnicas) con Ghidra. Keywords: forense, ghidra.'
+area: FORENSE
+tags: [forense, ghidra]
+source: '_src/mukul-anthropic/reverse-engineering-malware-with-ghidra/'
+license: Apache-2.0
+---
+
 # SKILL-GHIDRA.md — Reversing de malware con Ghidra
 
 Fuente: `_src/mukul-anthropic/reverse-engineering-malware-with-ghidra/`.

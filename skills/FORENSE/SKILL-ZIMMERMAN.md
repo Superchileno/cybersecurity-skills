@@ -1,3 +1,12 @@
+---
+name: forense-zimmerman
+description: 'Análisis forense rápido y estandarizado de artefactos Windows (soluciones de Zimmerman, gratuitas). Keywords: forense, zimmerman.'
+area: FORENSE
+tags: [forense, zimmerman]
+source: '_src/mukul-anthropic/performing-windows-artifact-analysis-with-eric-zimmerman-tools/'
+license: Apache-2.0
+---
+
 # SKILL-ZIMMERMAN.md — Análisis de artefactos Windows (Eric Zimmerman Tools)
 
 Fuente: `_src/mukul-anthropic/performing-windows-artifact-analysis-with-eric-zimmerman-tools/`.

@@ -1,3 +1,12 @@
+---
+name: cumplimiento-pcidss
+description: 'Organizaciones que procesan/almacenan/transmiten datos de tarjetas (CDE): cumplir y auditar PCI DSS. Keywords: cumplimiento, pcidss.'
+area: CUMPLIMIENTO
+tags: [cumplimiento, pcidss]
+source: '_src/mukul-anthropic/implementing-pci-dss-compliance-controls/'
+license: Apache-2.0
+---
+
 # SKILL-PCIDSS.md — Controles de cumplimiento PCI DSS
 
 Fuente: `_src/mukul-anthropic/implementing-pci-dss-compliance-controls/`.

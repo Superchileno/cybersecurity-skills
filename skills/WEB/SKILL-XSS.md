@@ -1,3 +1,11 @@
+---
+name: web-xss
+description: 'Input reflejado/almacenado en respuesta HTML, headers, cookies, hash (DOM). Keywords: web, xss.'
+area: WEB
+tags: [web, xss]
+license: Apache-2.0
+---
+
 # SKILL-XSS.md — Cross-Site Scripting
 
 ## Cuándo usarla

@@ -1,3 +1,12 @@
+---
+name: blueteam-lateral-splunk
+description: 'Correlacionar movimiento lateral en entorno Windows con Splunk (endpoint logs). Keywords: blueteam, lateral, splunk.'
+area: BLUETEAM
+tags: [blueteam, lateral, splunk]
+source: '_src/mukul-anthropic/detecting-lateral-movement-with-splunk/'
+license: Apache-2.0
+---
+
 # SKILL-LATERAL-SPLUNK.md — Detección de lateral movement con Splunk
 
 Fuente: `_src/mukul-anthropic/detecting-lateral-movement-with-splunk/`.

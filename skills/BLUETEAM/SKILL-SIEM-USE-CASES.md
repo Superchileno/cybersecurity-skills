@@ -1,3 +1,12 @@
+---
+name: blueteam-siem-use-cases
+description: 'Convertir técnicas ATT&CK en casos de uso SIEM concretos (quién ve qué, con qué fuentes). Keywords: blueteam, cases, siem, use.'
+area: BLUETEAM
+tags: [blueteam, cases, siem, use]
+source: '_src/mukul-anthropic/implementing-siem-use-cases-for-detection/'
+license: Apache-2.0
+---
+
 # SKILL-SIEM-USE-CASES.md — Casos de uso SIEM de detección
 
 Fuente: `_src/mukul-anthropic/implementing-siem-use-cases-for-detection/`.

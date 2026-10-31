@@ -1,3 +1,11 @@
+---
+name: redteam-ad
+description: 'Red interna con AD (dominios Windows) dentro de alcance autorizado. Keywords: ad, redteam.'
+area: REDTEAM
+tags: [ad, redteam]
+license: Apache-2.0
+---
+
 # SKILL-AD.md — Pentest de Active Directory
 
 ## Cuándo usarla

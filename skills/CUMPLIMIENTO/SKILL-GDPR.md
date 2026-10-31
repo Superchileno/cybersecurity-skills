@@ -1,3 +1,12 @@
+---
+name: cumplimiento-gdpr
+description: 'Organizaciones que procesan datos personales de residentes UE (RGPD/LOPDGDD): implementar controles y gestionar DSAR. Keywords: cumplimiento, gdpr.'
+area: CUMPLIMIENTO
+tags: [cumplimiento, gdpr]
+source: '_src/mukul-anthropic/implementing-gdpr-data-subject-access-request/'
+license: Apache-2.0
+---
+
 # SKILL-GDPR.md — Controles y derechos de datos GDPR
 
 Fuente: `_src/mukul-anthropic/implementing-gdpr-data-subject-access-request/`.

@@ -1,3 +1,11 @@
+---
+name: blueteam-purple-team
+description: 'Ejercicios purple team (validar detección) y emulación de TTPs con Atomic Red Team. Keywords: blueteam, purple, team.'
+area: BLUETEAM
+tags: [blueteam, purple, team]
+license: Apache-2.0
+---
+
 # SKILL-PURPLE-TEAM.md — Purple team / emulación adversarial
 
 Fuentes: `_src/mukul-anthropic/performing-purple-team-exercise/`, `performing-threat-emulation-with-atomic-red-team/`.

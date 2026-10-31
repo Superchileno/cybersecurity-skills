@@ -1,3 +1,12 @@
+---
+name: redteam-privesc-linux
+description: 'A partir de una shell de usuario con poca confianza en sistema Linux (dentro de alcance pentest autorizado), subir a root. Keywords: linux, privesc, redteam.'
+area: REDTEAM
+tags: [linux, privesc, redteam]
+source: '_src/mukul-anthropic/performing-privilege-escalation-on-linux/'
+license: Apache-2.0
+---
+
 # SKILL-PRIVESC-LINUX.md — Escalada de privilegios en Linux
 
 Fuente: `_src/mukul-anthropic/performing-privilege-escalation-on-linux/`.

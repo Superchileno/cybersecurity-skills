@@ -1,3 +1,11 @@
+---
+name: redes-puertos
+description: 'Fase de enum de hosts: mapear puertos/servicios y versiones del target. Keywords: puertos, redes.'
+area: REDES
+tags: [puertos, redes]
+license: Apache-2.0
+---
+
 # SKILL-PUERTOS.md — Escaneo de puertos y servicios
 
 ## Cuándo usarla

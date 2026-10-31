@@ -1,3 +1,12 @@
+---
+name: blueteam-soar-phantom
+description: 'Automatizar respuesta (enrichment, bloqueo, ticketing) entre herramientas con Splunk Phantom. Keywords: blueteam, phantom, soar.'
+area: BLUETEAM
+tags: [blueteam, phantom, soar]
+source: '_src/mukul-anthropic/implementing-soar-automation-with-phantom/'
+license: Apache-2.0
+---
+
 # SKILL-SOAR-PHANTOM.md — Orquestación/SOAR con Phantom
 
 Fuente: `_src/mukul-anthropic/implementing-soar-automation-with-phantom/`.

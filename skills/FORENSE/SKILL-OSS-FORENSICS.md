@@ -1,3 +1,11 @@
+---
+name: forense-oss-forensics
+description: 'Incidentes de repos: commits sospechosos, conflictos de dependencias, force-push, IOCs en el historial. Keywords: forense, forensics, oss.'
+area: FORENSE
+tags: [forense, forensics, oss]
+license: Apache-2.0
+---
+
 # SKILL-OSS-FORENSICS.md — Forense de supply-chain en GitHub
 
 Skill oficial: `skills/_src/hermes-security/oss-forensics/SKILL.md`.

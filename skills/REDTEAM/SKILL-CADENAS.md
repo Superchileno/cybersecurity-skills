@@ -1,3 +1,11 @@
+---
+name: redteam-cadenas
+description: 'Cuando varios hallazgos parciales se pueden conectar para un impacto mayor (ej. subdomain takeover → phish auth → ATO, o upload → LFI → RCE). Keywords: cadenas, redteam.'
+area: REDTEAM
+tags: [cadenas, redteam]
+license: Apache-2.0
+---
+
 # SKILL-CADENAS.md — Cadenas de ataque
 
 ## Cuándo usarla

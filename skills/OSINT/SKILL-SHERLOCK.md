@@ -1,3 +1,11 @@
+---
+name: osint-sherlock
+description: 'Identificar cuentas de un username, verificar disponibilidad, footprinting de persona. Keywords: osint, sherlock.'
+area: OSINT
+tags: [osint, sherlock]
+license: Apache-2.0
+---
+
 # SKILL-SHERLOCK.md — OSINT de usernames (sherlock)
 
 Skill oficial: `skills/_src/hermes-security/sherlock/SKILL.md`.

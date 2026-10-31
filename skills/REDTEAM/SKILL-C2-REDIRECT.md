@@ -1,3 +1,12 @@
+---
+name: redteam-c2-redirect
+description: 'Construir la infraestructura de redirección entre implant y C2 para resiliencia/anonimato (red team autorizado). Keywords: c2, redirect, redteam.'
+area: REDTEAM
+tags: [c2, redirect, redteam]
+source: '_src/mukul-anthropic/building-c2-redirector-infrastructure/'
+license: Apache-2.0
+---
+
 # SKILL-C2-REDIRECT.md — Infraestructura de redirección C2
 
 Fuente: `_src/mukul-anthropic/building-c2-redirector-infrastructure/`.

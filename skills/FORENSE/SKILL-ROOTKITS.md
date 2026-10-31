@@ -1,3 +1,12 @@
+---
+name: forense-rootkits
+description: 'Investigar muestras de rootkits/bootkits (kernel, UEFI, boot sector) en laboratorio autorizado. Keywords: forense, rootkits.'
+area: FORENSE
+tags: [forense, rootkits]
+source: '_src/mukul-anthropic/analyzing-bootkit-and-rootkit-samples/'
+license: Apache-2.0
+---
+
 # SKILL-ROOTKITS.md — Análisis de bootkits y rootkits
 
 Fuente: `_src/mukul-anthropic/analyzing-bootkit-and-rootkit-samples/`.

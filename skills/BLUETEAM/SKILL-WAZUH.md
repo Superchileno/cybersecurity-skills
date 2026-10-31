@@ -1,3 +1,12 @@
+---
+name: blueteam-wazuh
+description: 'Desplegar/operar Wazuh (HIDS/EDR open-source) para detección en endpoints. Keywords: blueteam, wazuh.'
+area: BLUETEAM
+tags: [blueteam, wazuh]
+source: '_src/mukul-anthropic/implementing-endpoint-detection-with-wazuh/'
+license: Apache-2.0
+---
+
 # SKILL-WAZUH.md — EDR/HIDS con Wazuh
 
 Fuente: `_src/mukul-anthropic/implementing-endpoint-detection-with-wazuh/`.

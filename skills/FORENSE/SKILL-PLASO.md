@@ -1,3 +1,12 @@
+---
+name: forense-plaso
+description: 'Construir timeline forense integral a partir de múltiples fuentes (filesystem, registro, eventos, navegadores, logs). Keywords: forense, plaso.'
+area: FORENSE
+tags: [forense, plaso]
+source: '_src/mukul-anthropic/building-super-timelines-with-plaso/'
+license: Apache-2.0
+---
+
 # SKILL-PLASO.md — Super timelines con Plaso (log2timeline)
 
 Fuente: `_src/mukul-anthropic/building-super-timelines-with-plaso/`.

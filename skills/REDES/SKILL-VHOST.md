@@ -1,3 +1,11 @@
+---
+name: redes-vhost
+description: 'Cuando el IP responde a un default site (misma web) y el dominio da otro contenido, o hay subdominios no frenados por el servidor. Útil en hosts virtuales de Apache/nginx. Keywords: redes, vhost.'
+area: REDES
+tags: [redes, vhost]
+license: Apache-2.0
+---
+
 # SKILL-VHOST.md — Enumeración de virtual hosts
 
 ## Cuándo usarla

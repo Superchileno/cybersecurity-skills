@@ -1,3 +1,11 @@
+---
+name: web-wpscan
+description: 'Se detecta WordPress (whatweb/nmap) y toca evaluar plugins, themes, XMLRPC, REST. Keywords: web, wpscan.'
+area: WEB
+tags: [web, wpscan]
+license: Apache-2.0
+---
+
 # SKILL-WPSCAN.md — WordPress security
 
 ## Cuándo usarla

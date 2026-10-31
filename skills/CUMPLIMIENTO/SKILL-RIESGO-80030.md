@@ -1,3 +1,12 @@
+---
+name: cumplimiento-riesgo-80030
+description: 'Evaluar el riesgo de un sistema/activo siguiendo la metodología de NIST SP 800-30 Rev 1 (o enfoque cualitativo modificado). Keywords: 80030, cumplimiento, riesgo.'
+area: CUMPLIMIENTO
+tags: [80030, cumplimiento, riesgo]
+source: '_src/mukul-anthropic/conducting-cyber-risk-assessment-with-nist-800-30/'
+license: Apache-2.0
+---
+
 # SKILL-RIESGO-80030.md — Evaluación de riesgo ciber (NIST SP 800-30)
 
 Fuente: `_src/mukul-anthropic/conducting-cyber-risk-assessment-with-nist-800-30/`.

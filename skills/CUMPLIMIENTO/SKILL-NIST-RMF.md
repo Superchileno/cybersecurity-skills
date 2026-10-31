@@ -1,3 +1,12 @@
+---
+name: cumplimiento-nist-rmf
+description: 'Implementar el NIST Risk Management Framework (SP 800-37) para autorización a operar de sistemas federales / de alta seguridad. Keywords: cumplimiento, nist, rmf.'
+area: CUMPLIMIENTO
+tags: [cumplimiento, nist, rmf]
+source: '_src/mukul-anthropic/executing-nist-rmf-authorization-to-operate/'
+license: Apache-2.0
+---
+
 # SKILL-NIST-RMF.md — NIST RMF (Authorization to Operate)
 
 Fuente: `_src/mukul-anthropic/executing-nist-rmf-authorization-to-operate/`.

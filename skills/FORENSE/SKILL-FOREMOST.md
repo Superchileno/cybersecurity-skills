@@ -1,3 +1,12 @@
+---
+name: forense-foremost
+description: 'Recuperar ficheros borrados sin metadatos (solo cabeceras) desde imágenes de disco o almacenamiento. Keywords: foremost, forense.'
+area: FORENSE
+tags: [foremost, forense]
+source: '_src/mukul-anthropic/performing-file-carving-with-foremost/'
+license: Apache-2.0
+---
+
 # SKILL-FOREMOST.md — File carving con foremost
 
 Fuente: `_src/mukul-anthropic/performing-file-carving-with-foremost/`.

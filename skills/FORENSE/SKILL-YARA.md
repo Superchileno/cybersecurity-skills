@@ -1,3 +1,12 @@
+---
+name: forense-yara
+description: 'Crear reglas YARA para detectar/identificar malware por metadatos (strings, bytes, imports, comportamientos). Keywords: forense, yara.'
+area: FORENSE
+tags: [forense, yara]
+source: '_src/mukul-anthropic/performing-yara-rule-development-for-detection/'
+license: Apache-2.0
+---
+
 # SKILL-YARA.md — Desarrollo de reglas YARA para detección
 
 Fuente: `_src/mukul-anthropic/performing-yara-rule-development-for-detection/`.

@@ -1,3 +1,12 @@
+---
+name: cumplimiento-soc2
+description: 'Preparar la organización para el examen SOC 2 (Trust Services Criteria, Type 1/2) por un auditor CPA. Keywords: cumplimiento, soc2.'
+area: CUMPLIMIENTO
+tags: [cumplimiento, soc2]
+source: '_src/mukul-anthropic/performing-soc2-type2-audit-preparation/'
+license: Apache-2.0
+---
+
 # SKILL-SOC2.md — Preparación de auditoría SOC 2 Type 2
 
 Fuente: `_src/mukul-anthropic/performing-soc2-type2-audit-preparation/`.

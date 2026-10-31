@@ -1,3 +1,12 @@
+---
+name: osint-spiderfoot
+description: 'Recon OSINT automatizado (dominios, IPs, emails, people) en 200+ módulos (pasivo mayormente) — complementa a sherlock. Keywords: osint, spiderfoot.'
+area: OSINT
+tags: [osint, spiderfoot]
+source: '_src/mukul-anthropic/performing-osint-with-spiderfoot/'
+license: Apache-2.0
+---
+
 # SKILL-SPIDERFOOT.md — OSINT con SpiderFoot
 
 Fuente: `_src/mukul-anthropic/performing-osint-with-spiderfoot/`.

@@ -1,3 +1,11 @@
+---
+name: web-lfi-rce
+description: 'Parámetros con rutas: `file=`, `page=`, `include=`, `template=`, `path=`, `download=`, `view=`; apps PHP (`phpinfo-to-rce`), o plataformas con template engines. Keywords: lfi, rce, web.'
+area: WEB
+tags: [lfi, rce, web]
+license: Apache-2.0
+---
+
 # SKILL-LFI-RCE.md — LFI / path traversal / RCE
 
 ## Cuándo usarla

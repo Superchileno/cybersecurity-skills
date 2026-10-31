@@ -1,3 +1,12 @@
+---
+name: blueteam-deteccion-dcsync
+description: 'Detectar intentos de DCSync (replicación de credenciales DC vía `DS-Replication-Get-Changes*`) en logs de AD. Keywords: blueteam, dcsync, deteccion.'
+area: BLUETEAM
+tags: [blueteam, dcsync, deteccion]
+source: '_src/mukul-anthropic/detecting-dcsync-attack-in-active-directory/'
+license: Apache-2.0
+---
+
 # SKILL-DETECCION-DCSYNC.md — Detección de DCSync
 
 Fuente: `_src/mukul-anthropic/detecting-dcsync-attack-in-active-directory/`.

@@ -1,3 +1,12 @@
+---
+name: redes-shodan
+description: 'Enriquecer pasivamente IPs/activos (servicios, historial, exposición) dentro del alcance OSINT/recon. Keywords: redes, shodan.'
+area: REDES
+tags: [redes, shodan]
+source: '_src/mukul-anthropic/performing-ip-reputation-analysis-with-shodan/'
+license: Apache-2.0
+---
+
 # SKILL-SHODAN.md — Reputación de IP con Shodan
 
 Fuente: `_src/mukul-anthropic/performing-ip-reputation-analysis-with-shodan/`.

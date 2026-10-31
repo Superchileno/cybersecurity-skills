@@ -1,3 +1,12 @@
+---
+name: blueteam-beacons
+description: 'Buscar callbacks de Cobalt Strike en tráfico de red / construir detección del C2. Keywords: beacons, blueteam.'
+area: BLUETEAM
+tags: [beacons, blueteam]
+source: '_src/mukul-anthropic/hunting-for-cobalt-strike-beacons/'
+license: Apache-2.0
+---
+
 # SKILL-BEACONS.md — Hunting de Cobalt Strike beacons
 
 Fuente: `_src/mukul-anthropic/hunting-for-cobalt-strike-beacons/`.

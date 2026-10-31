@@ -1,3 +1,12 @@
+---
+name: cumplimiento-nerc-cip
+description: 'Empresas del sector eléctrico (BES: Bulk Electric System) que deben cumplir los estándares NERC CIP. Keywords: cip, cumplimiento, nerc.'
+area: CUMPLIMIENTO
+tags: [cip, cumplimiento, nerc]
+source: '_src/mukul-anthropic/implementing-nerc-cip-compliance-controls/'
+license: Apache-2.0
+---
+
 # SKILL-NERC-CIP.md — Cumplimiento NERC CIP (infraestructura crítica)
 
 Fuente: `_src/mukul-anthropic/implementing-nerc-cip-compliance-controls/`.

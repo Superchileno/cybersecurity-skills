@@ -1,3 +1,11 @@
+---
+name: redteam-metodologia
+description: 'Antes de planear cualquier engagement ofensivo (planning/framework). Keywords: metodologia, redteam.'
+area: REDTEAM
+tags: [metodologia, redteam]
+license: Apache-2.0
+---
+
 # SKILL-METODOLOGIA.md — Mindset y metodología ofensiva
 
 ## Cuándo usarla

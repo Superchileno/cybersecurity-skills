@@ -1,3 +1,12 @@
+---
+name: redteam-c2-havoc
+description: 'Operar un C2 Havoc (teamserver + cliente) en red team autorizado. Keywords: c2, havoc, redteam.'
+area: REDTEAM
+tags: [c2, havoc, redteam]
+source: '_src/mukul-anthropic/operating-havoc-c2/'
+license: Apache-2.0
+---
+
 # SKILL-C2-HAVOC.md — Operar C2 con Havoc
 
 Fuente: `_src/mukul-anthropic/operating-havoc-c2/`.

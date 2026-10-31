@@ -1,3 +1,12 @@
+---
+name: forense-autopsy
+description: 'Análisis forense de imágenes de disco Windows/Linux (filesystem, correo, navegador, borrados). Keywords: autopsy, forense.'
+area: FORENSE
+tags: [autopsy, forense]
+source: '_src/mukul-anthropic/analyzing-disk-image-with-autopsy/'
+license: Apache-2.0
+---
+
 # SKILL-AUTOPSY.md — Análisis de imágenes de disco con Autopsy
 
 Fuente: `_src/mukul-anthropic/analyzing-disk-image-with-autopsy/`.

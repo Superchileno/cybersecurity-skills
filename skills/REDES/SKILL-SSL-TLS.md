@@ -1,3 +1,12 @@
+---
+name: redes-ssl-tls
+description: 'Auditar la configuración TLS del target (protocolos, cifrados, certs, configurione) dentro de alcance. Keywords: redes, ssl, tls.'
+area: REDES
+tags: [redes, ssl, tls]
+source: '_src/mukul-anthropic/performing-ssl-tls-security-assessment/'
+license: Apache-2.0
+---
+
 # SKILL-SSL-TLS.md — Evaluación de seguridad SSL/TLS
 
 Fuente: `_src/mukul-anthropic/performing-ssl-tls-security-assessment/`.

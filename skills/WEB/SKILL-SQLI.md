@@ -1,3 +1,11 @@
+---
+name: web-sqli
+description: 'Parámetros/paths en web/API que parecen consultar una BD (IDs, búsquedas, filtros, login). Keywords: sqli, web.'
+area: WEB
+tags: [sqli, web]
+license: Apache-2.0
+---
+
 # SKILL-SQLI.md — SQL Injection
 
 ## Cuándo usarla

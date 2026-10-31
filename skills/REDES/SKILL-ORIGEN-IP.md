@@ -1,3 +1,11 @@
+---
+name: redes-origen-ip
+description: 'El target está detrás de Cloudflare/AWS/otros CDN y necesitas la IP real del origin server (para pruebas autorizadas dentro de alcance). Keywords: ip, origen, redes.'
+area: REDES
+tags: [ip, origen, redes]
+license: Apache-2.0
+---
+
 # SKILL-ORIGEN-IP.md — Descubrimiento de IP de origen tras CDN/WAF
 
 ## Cuándo usarla

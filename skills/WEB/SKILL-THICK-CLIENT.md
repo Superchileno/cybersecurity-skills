@@ -1,3 +1,12 @@
+---
+name: web-thick-client
+description: 'Aplicaciones de escritorio (clientes gordos) que se comunican con servidores (bases, APIs) dentro de alcance autorizado. Keywords: client, thick, web.'
+area: WEB
+tags: [client, thick, web]
+source: '_src/mukul-anthropic/performing-thick-client-application-penetration-test/'
+license: Apache-2.0
+---
+
 # SKILL-THICK-CLIENT.md — Pentest de clientes gordos (thick client)
 
 Fuente: `_src/mukul-anthropic/performing-thick-client-application-penetration-test/`.

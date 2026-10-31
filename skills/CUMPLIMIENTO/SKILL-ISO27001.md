@@ -1,3 +1,12 @@
+---
+name: cumplimiento-iso27001
+description: 'Diseñar/auditar un SGSI basado en ISO/IEC 27001 (y Anexo A 2022). Keywords: cumplimiento, iso27001.'
+area: CUMPLIMIENTO
+tags: [cumplimiento, iso27001]
+source: '_src/mukul-anthropic/implementing-iso-27001-information-security-management/'
+license: Apache-2.0
+---
+
 # SKILL-ISO27001.md — Sistema de gestión de seguridad (ISO 27001)
 
 Fuente: `_src/mukul-anthropic/implementing-iso-27001-information-security-management/`.

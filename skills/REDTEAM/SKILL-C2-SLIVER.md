@@ -1,3 +1,12 @@
+---
+name: redteam-c2-sliver
+description: 'Operar un C2 en un red team autorizado (Sliver como C2 redteam). Keywords: c2, redteam, sliver.'
+area: REDTEAM
+tags: [c2, redteam, sliver]
+source: '_src/mukul-anthropic/operating-sliver-c2/'
+license: Apache-2.0
+---
+
 # SKILL-C2-SLIVER.md — Operar C2 con Sliver
 
 Fuente: `_src/mukul-anthropic/operating-sliver-c2/`.

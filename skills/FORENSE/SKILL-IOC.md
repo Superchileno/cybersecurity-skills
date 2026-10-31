@@ -1,3 +1,11 @@
+---
+name: forense-ioc
+description: 'Dentro de una investigación (oss-forensics) o threat hunting: definir y rastrear Indicators of Compromise con trazabilidad evidenciable. Keywords: forense, ioc.'
+area: FORENSE
+tags: [forense, ioc]
+license: Apache-2.0
+---
+
 # SKILL-IOC.md — Extracción, enriquecimiento y trazabilidad de IOCs
 
 ## Cuándo usarla

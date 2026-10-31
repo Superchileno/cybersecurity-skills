@@ -1,3 +1,12 @@
+---
+name: redes-bgp-hijack
+description: 'Entender/validar el riesgo de secuestro BGP de rangos de la organización (routing security), y mitCon RPKI (de forma defensiva/auditoría). Keywords: bgp, hijack, redes.'
+area: REDES
+tags: [bgp, hijack, redes]
+source: '_src/mukul-anthropic/exploiting-bgp-hijacking-vulnerabilities/'
+license: Apache-2.0
+---
+
 # SKILL-BGP-HIJACK.md — Evaluación de hijacking BGP y mitigación RPKI
 
 Fuente: `_src/mukul-anthropic/exploiting-bgp-hijacking-vulnerabilities/`, `implementing-bgp-security-with-rpki`.

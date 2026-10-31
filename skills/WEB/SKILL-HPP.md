@@ -1,3 +1,12 @@
+---
+name: web-hpp
+description: 'Frameworks/backends que no tratan igual parámetros duplicados (primero/último/array) — deriva en lógica rota, auth bypass, SSRF/redirect. Keywords: hpp, web.'
+area: WEB
+tags: [hpp, web]
+source: '_src/mukul-anthropic/performing-http-parameter-pollution-attack/'
+license: Apache-2.0
+---
+
 # SKILL-HPP.md — HTTP Parameter Pollution
 
 Fuente: `_src/mukul-anthropic/performing-http-parameter-pollution-attack/`.

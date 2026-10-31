@@ -1,3 +1,12 @@
+---
+name: blueteam-lotl
+description: 'Detectar abuso de binarios del sistema (LOLBin) para evasión/ejecución de malware. Keywords: blueteam, lotl.'
+area: BLUETEAM
+tags: [blueteam, lotl]
+source: '_src/mukul-anthropic/detecting-living-off-the-land-attacks/'
+license: Apache-2.0
+---
+
 # SKILL-LOTL.md — Detección de Living off the Land (LOLBins)
 
 Fuente: `_src/mukul-anthropic/detecting-living-off-the-land-attacks/`.

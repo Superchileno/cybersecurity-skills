@@ -1,3 +1,11 @@
+---
+name: web-enum-web
+description: 'Fase 2 del pentest web / recon: descubrir rutas, archivos, tecnología, source maps. Keywords: enum, web.'
+area: WEB
+tags: [enum, web]
+license: Apache-2.0
+---
+
 # SKILL-ENUM-WEB.md — Enumeración web
 
 ## Cuándo usarla

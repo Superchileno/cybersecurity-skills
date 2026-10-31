@@ -1,3 +1,12 @@
+---
+name: cumplimiento-nist-csf
+description: 'Valorar la postura de seguridad de una organización contra las funciones del NIST CSF 2.0 y niveles de madurez. Keywords: csf, cumplimiento, nist.'
+area: CUMPLIMIENTO
+tags: [csf, cumplimiento, nist]
+source: '_src/mukul-anthropic/performing-nist-csf-maturity-assessment/'
+license: Apache-2.0
+---
+
 # SKILL-NIST-CSF.md — Evaluación de madurez NIST CSF
 
 Fuente: `_src/mukul-anthropic/performing-nist-csf-maturity-assessment/`.

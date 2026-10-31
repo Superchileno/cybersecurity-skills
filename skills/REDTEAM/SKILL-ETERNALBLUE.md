@@ -1,3 +1,12 @@
+---
+name: redteam-eternalblue
+description: 'Host Windows con SMB (445) expuesto y no parcheado de MS17-010 (CVE-2017-0144) dentro de alcance autorizado. Keywords: eternalblue, redteam.'
+area: REDTEAM
+tags: [eternalblue, redteam]
+source: '_src/mukul-anthropic/exploiting-ms17-010-eternalblue-vulnerability/'
+license: Apache-2.0
+---
+
 # SKILL-ETERNALBLUE.md — Explotación MS17-010 (EternalBlue)
 
 Fuente: `_src/mukul-anthropic/exploiting-ms17-010-eternalblue-vulnerability/`.

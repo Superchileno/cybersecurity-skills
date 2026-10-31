@@ -1,3 +1,11 @@
+---
+name: redteam-entra-attack
+description: 'Post-explotación / pentest de tenants Entra ID (Microsoft Entra) autorizados: abusar de condiciones, tokens, aplicaciones, consenso. Keywords: attack, entra, redteam.'
+area: REDTEAM
+tags: [attack, entra, redteam]
+license: Apache-2.0
+---
+
 # SKILL-ENTRA-ATTACK.md — Ataque a Entra ID (M365) con roadtools/GraphRunner
 
 Fuentes: `_src/mukul-anthropic/attacking-entra-id-with-roadtools/`, `post-exploiting-microsoft-graph-with-graphrunner/`.

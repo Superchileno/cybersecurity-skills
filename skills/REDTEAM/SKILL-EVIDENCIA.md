@@ -1,3 +1,11 @@
+---
+name: redteam-evidencia
+description: 'Toda vez que se captura hallazgo (L3/L4) o se construye el reporte. Fuente base: `skills/_src/recon-skills/redteam/evidence-hygiene`, `redteam/triage-validation`. Keywords: evidencia, redteam.'
+area: REDTEAM
+tags: [evidencia, redteam]
+license: Apache-2.0
+---
+
 # SKILL-EVIDENCIA.md — Higiene de evidencia
 
 ## Cuándo usarla

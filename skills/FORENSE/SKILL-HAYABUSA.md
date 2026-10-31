@@ -1,3 +1,12 @@
+---
+name: forense-hayabusa
+description: 'Timelines forenses rápidos de eventos Windows (evtx) con detección reglas Sigma/YARA integradas. Keywords: forense, hayabusa.'
+area: FORENSE
+tags: [forense, hayabusa]
+source: '_src/mukul-anthropic/generating-forensic-timelines-with-hayabusa/'
+license: Apache-2.0
+---
+
 # SKILL-HAYABUSA.md — Forense de Windows con Hayabusa
 
 Fuente: `_src/mukul-anthropic/generating-forensic-timelines-with-hayabusa/`.

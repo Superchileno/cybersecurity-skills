@@ -1,3 +1,11 @@
+---
+name: forense-volatility
+description: 'Análisis forense de dumps de memoria RAM (compromiso, malware en memoria). Keywords: forense, volatility.'
+area: FORENSE
+tags: [forense, volatility]
+license: Apache-2.0
+---
+
 # SKILL-VOLATILITY.md — Análisis de memoria con Volatility 2/3
 
 Fuentes: `_src/mukul-anthropic/analyzing-memory-dumps-with-volatility/`, `performing-memory-forensics-with-volatility3/`.

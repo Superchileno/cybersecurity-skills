@@ -1,3 +1,12 @@
+---
+name: cumplimiento-tpv
+description: 'Evaluar y gestionar el riesgo de proveedores/terceros (incluidos procesadores de datos y subcontratistas). Keywords: cumplimiento, tpv.'
+area: CUMPLIMIENTO
+tags: [cumplimiento, tpv]
+source: '_src/mukul-anthropic/managing-third-party-vendor-risk/'
+license: Apache-2.0
+---
+
 # SKILL-TPV.md — Gestión de riesgo de terceros (vendor risk)
 
 Fuente: `_src/mukul-anthropic/managing-third-party-vendor-risk/`.

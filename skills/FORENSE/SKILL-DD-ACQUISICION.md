@@ -1,3 +1,12 @@
+---
+name: forense-dd-acquisicion
+description: 'Adquirir imagen bit-por-bit de un disco/dispositivo para análisis forense, preservando integridad. Keywords: acquisicion, dd, forense.'
+area: FORENSE
+tags: [acquisicion, dd, forense]
+source: '_src/mukul-anthropic/acquiring-disk-image-with-dd-and-dcfldd/'
+license: Apache-2.0
+---
+
 # SKILL-DD-ACQUISICION.md — Adquisición de imagen de disco con dd/dcfldd
 
 Fuente: `_src/mukul-anthropic/acquiring-disk-image-with-dd-and-dcfldd/`.

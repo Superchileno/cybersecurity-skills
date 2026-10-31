@@ -1,3 +1,12 @@
+---
+name: forense-hindsight
+description: 'Analizar datos de navegación (Chrome/Edge/Chromium) en imágenes forenses: historial, descargas, cookies, autofill. Keywords: forense, hindsight.'
+area: FORENSE
+tags: [forense, hindsight]
+source: '_src/mukul-anthropic/analyzing-browser-forensics-with-hindsight/'
+license: Apache-2.0
+---
+
 # SKILL-HINDSIGHT.md — Forense de navegador con Hindsight
 
 Fuente: `_src/mukul-anthropic/analyzing-browser-forensics-with-hindsight/`.

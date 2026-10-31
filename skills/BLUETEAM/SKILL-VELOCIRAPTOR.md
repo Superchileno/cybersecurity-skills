@@ -1,3 +1,12 @@
+---
+name: blueteam-velociraptor
+description: 'Hunting/forense a escala en toda una flota de endpoints con Velociraptor (recuperación remota). Keywords: blueteam, velociraptor.'
+area: BLUETEAM
+tags: [blueteam, velociraptor]
+source: '_src/mukul-anthropic/fleet-hunting-with-velociraptor/'
+license: Apache-2.0
+---
+
 # SKILL-VELOCIRAPTOR.md — Fleet hunting con Velociraptor
 
 Fuente: `_src/mukul-anthropic/fleet-hunting-with-velociraptor/`.

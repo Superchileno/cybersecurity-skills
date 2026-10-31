@@ -1,3 +1,11 @@
+---
+name: redteam-pwspray
+description: 'Login con protección de bloqueo; en lugar de brute-force agresiva, usar un número reducido de passwords (comunes/epocal) contra muchos usuarios. Keywords: pwspray, redteam.'
+area: REDTEAM
+tags: [pwspray, redteam]
+license: Apache-2.0
+---
+
 # SKILL-PWSPRAY.md — Password spraying
 
 ## Cuándo usarla

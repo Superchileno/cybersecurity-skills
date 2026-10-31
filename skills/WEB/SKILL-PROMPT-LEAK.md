@@ -1,3 +1,12 @@
+---
+name: web-prompt-leak
+description: 'Evaluar la seguridad de un LLM/aplicación de IA: que los system prompts / RAG no sean extraíbles. Keywords: leak, prompt, web.'
+area: WEB
+tags: [leak, prompt, web]
+source: '_src/mukul-anthropic/testing-for-system-prompt-leakage/'
+license: Apache-2.0
+---
+
 # SKILL-PROMPT-LEAK.md — Prueba de fuga de system prompt (LLM)
 
 Fuente: `_src/mukul-anthropic/testing-for-system-prompt-leakage/`.

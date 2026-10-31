@@ -1,3 +1,12 @@
+---
+name: redes-ct-logs
+description: 'Descubrir subdominios/hosts (CT) pasivamente, detectar phishing/cert abusivos, o monitorear emisión de certs del dominio. Keywords: ct, logs, redes.'
+area: REDES
+tags: [ct, logs, redes]
+source: '_src/mukul-anthropic/analyzing-tls-certificate-transparency-logs/'
+license: Apache-2.0
+---
+
 # SKILL-CT-LOGS.md — Análisis de Certificate Transparency logs
 
 Fuente: `_src/mukul-anthropic/analyzing-tls-certificate-transparency-logs/`.

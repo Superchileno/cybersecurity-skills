@@ -1,3 +1,12 @@
+---
+name: blueteam-sigma
+description: 'Crear reglas de detección portable/SIEM-agnóstico, o convertir entre Sigma ↔ Splunk/Elastic/QRadar. Keywords: blueteam, sigma.'
+area: BLUETEAM
+tags: [blueteam, sigma]
+source: '_src/mukul-anthropic/building-detection-rules-with-sigma/'
+license: Apache-2.0
+---
+
 # SKILL-SIGMA.md — Building detection rules with Sigma
 
 Fuente: `_src/mukul-anthropic/building-detection-rules-with-sigma/`.

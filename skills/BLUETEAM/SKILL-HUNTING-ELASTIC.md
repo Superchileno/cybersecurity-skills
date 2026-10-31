@@ -1,3 +1,12 @@
+---
+name: blueteam-hunting-elastic
+description: 'Hunting estructurado de amenazas sobre Elastic Stack (potencialmente WELK ya desplegado). Keywords: blueteam, elastic, hunting.'
+area: BLUETEAM
+tags: [blueteam, elastic, hunting]
+source: '_src/mukul-anthropic/performing-threat-hunting-with-elastic-siem/'
+license: Apache-2.0
+---
+
 # SKILL-HUNTING-ELASTIC.md — Threat hunting con Elastic SIEM
 
 Fuente: `_src/mukul-anthropic/performing-threat-hunting-with-elastic-siem/`.

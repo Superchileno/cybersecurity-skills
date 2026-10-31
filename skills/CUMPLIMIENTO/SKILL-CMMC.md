@@ -1,3 +1,12 @@
+---
+name: cumplimiento-cmmc
+description: 'Contratos DoD con CUI/DFARS 252.204-7012/7019/7020/7021: preparar CMMC L2, calcular SPRS, construir SSP/POA&M, o preparar evaluación C3PAO. Keywords: cmmc, cumplimiento.'
+area: CUMPLIMIENTO
+tags: [cmmc, cumplimiento]
+source: '_src/mukul-anthropic/achieving-cmmc-level-2-compliance/'
+license: Apache-2.0
+---
+
 # SKILL-CMMC.md — Cumplimiento CMMC Level 2
 
 Fuente: `_src/mukul-anthropic/achieving-cmmc-level-2-compliance/`.

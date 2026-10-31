@@ -1,3 +1,11 @@
+---
+name: web-upload
+description: 'Formularios/API de subida de archivos (avatar, docs, import, editor). Keywords: upload, web.'
+area: WEB
+tags: [upload, web]
+license: Apache-2.0
+---
+
 # SKILL-UPLOAD.md — File Upload
 
 ## Cuándo usarla

@@ -1,3 +1,12 @@
+---
+name: blueteam-golden-ticket
+description: 'Detectar tickets Kerberos forjados (golden/silver ticket) en logs del DC. Keywords: blueteam, golden, ticket.'
+area: BLUETEAM
+tags: [blueteam, golden, ticket]
+source: '_src/mukul-anthropic/detecting-golden-ticket-attacks-in-kerberos-logs/'
+license: Apache-2.0
+---
+
 # SKILL-GOLDEN-TICKET.md — Detección de Golden Ticket en Kerberos
 
 Fuente: `_src/mukul-anthropic/detecting-golden-ticket-attacks-in-kerberos-logs/`.

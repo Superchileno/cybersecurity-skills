@@ -1,3 +1,12 @@
+---
+name: forense-kape
+description: 'Adquisición/triage forense rápido de endpoints Windows (recopilar artefactos clave sin cambiar el equipo). Keywords: forense, kape.'
+area: FORENSE
+tags: [forense, kape]
+source: '_src/mukul-anthropic/triaging-windows-with-kape/'
+license: Apache-2.0
+---
+
 # SKILL-KAPE.md — Triage forense con KAPE
 
 Fuente: `_src/mukul-anthropic/triaging-windows-with-kape/`.

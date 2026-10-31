@@ -1,3 +1,12 @@
+---
+name: osint-actor-osint
+description: 'Construir un perfil de un grupo/actor de amenazas a partir de OSINT/CTI (TPPs, infra, IOCs) para contexto defensivo. Keywords: actor, osint.'
+area: OSINT
+tags: [actor, osint]
+source: '_src/mukul-anthropic/building-threat-actor-profile-from-osint/'
+license: Apache-2.0
+---
+
 # SKILL-ACTOR-OSINT.md — Perfil de actor amenaza desde OSINT
 
 Fuente: `_src/mukul-anthropic/building-threat-actor-profile-from-osint/`.

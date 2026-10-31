@@ -1,3 +1,11 @@
+---
+name: osint-osint
+description: 'Recon pasivo previo a pentest: footprinting del dominio/persona/organización sin tocar endpoints activos. Keywords: osint.'
+area: OSINT
+tags: [osint]
+license: Apache-2.0
+---
+
 # SKILL-OSINT.md — Metodología OSINT ofensiva
 
 ## Cuándo usarla

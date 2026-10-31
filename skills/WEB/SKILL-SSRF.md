@@ -1,3 +1,11 @@
+---
+name: web-ssrf
+description: 'Aplicaciones/API que aceptan URLs (previews, proxys, descarga de docs, webhooks, import). Keywords: ssrf, web.'
+area: WEB
+tags: [ssrf, web]
+license: Apache-2.0
+---
+
 # SKILL-SSRF.md — Server-Side Request Forgery
 
 ## Cuándo usarla

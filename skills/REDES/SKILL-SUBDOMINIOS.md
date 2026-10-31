@@ -1,3 +1,11 @@
+---
+name: redes-subdominios
+description: 'Recon inicial: ampliar la superficie del dominio objetivo (explosión de alcance). Keywords: redes, subdominios.'
+area: REDES
+tags: [redes, subdominios]
+license: Apache-2.0
+---
+
 # SKILL-SUBDOMINIOS.md — Enumeración de subdominios
 
 ## Cuándo usarla

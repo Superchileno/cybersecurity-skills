@@ -1,3 +1,12 @@
+---
+name: web-xml-injection
+description: 'Aplicaciones que procesan XML (SOAP, import docs, WebDAV) — probabilidad de XXE/XXE-XPath en `data:` tags. Keywords: injection, web, xml.'
+area: WEB
+tags: [injection, web, xml]
+source: '_src/mukul-anthropic/testing-for-xml-injection-vulnerabilities/'
+license: Apache-2.0
+---
+
 # SKILL-XML-INJECTION.md — Inyección XML (XXE/XPATH)
 
 Fuente: `_src/mukul-anthropic/testing-for-xml-injection-vulnerabilities/`.
