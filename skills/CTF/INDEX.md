@@ -5,10 +5,11 @@ criptografía clásica, forense de audio/logs/red, explotación de binarios, rev
 de código ofuscado y defensa frente a prompt injection dirigida a agentes de IA.
 
 A diferencia del resto de áreas, cada tarjeta tiene una **skill completa ejecutable**
-en `_full/`, con `references/`, `scripts/` y `assets/`. El CLI `bin/ctf-arsenal`
-despacha a esos scripts.
+en `_full/`, con `references/`, `scripts/` y `assets/`, o **material de profundidad
+vendorizado** en `_src/ljagiello-ctf-skills/`. El CLI `bin/ctf-arsenal` despacha a
+los scripts propios.
 
-## Subskills destiladas
+## Subskills propias (ejecutables)
 
 | Subskill | Cuándo usarla | Fuente |
 |---|---|---|
@@ -19,6 +20,20 @@ despacha a esos scripts.
 | `SKILL-CTF-PWN.md` | ELF + `nc`: format string, ret2win, SROP, heap y kernel | `_full/exploiting-binary-vulnerabilities-in-ctf/` |
 | `SKILL-CTF-REVERSING.md` | Binarios stripped, tablas, permutaciones, VMs y oráculos | `_full/reversing-obfuscated-binaries-and-vms/` |
 | `SKILL-CTF-PROMPT-INJECTION.md` | Directivas ocultas dirigidas a agentes de IA | `_full/defending-against-prompt-injection-in-ctf-agents/` |
+
+## Tarjetas puente (profundidad vendorizada)
+
+Resumen en español + enrutado a `skills/_src/ljagiello-ctf-skills/` (MIT). Solo se
+copian al instalar con `--with-deep`.
+
+| Subskill | Cuándo usarla | Profundidad |
+|---|---|---|
+| `SKILL-CTF-WEB.md` | URL, API, SPA o código web: SQLi, XSS, SSTI, SSRF, XXE, JWT | `_src/ljagiello-ctf-skills/ctf-web/` |
+| `SKILL-CTF-MISC.md` | Pyjails, bash jails, encodings, Z3, RF/SDR, privesc local | `_src/ljagiello-ctf-skills/ctf-misc/` |
+| `SKILL-CTF-AI-ML.md` | Modelos, pesos, notebooks, endpoints de LLM | `_src/ljagiello-ctf-skills/ctf-ai-ml/` |
+| `SKILL-CTF-MALWARE.md` | Muestras, paquetes, pcap malicioso, binarios con C2 | `_src/ljagiello-ctf-skills/ctf-malware/` |
+| `SKILL-CTF-OSINT.md` | Geolocalización, reverse image, perfiles, dorks | `_src/ljagiello-ctf-skills/ctf-osint/` |
+| `SKILL-CTF-ORQUESTACION.md` | Triaje, pivote, búsqueda de writeups, formato de entrega | `_src/ljagiello-ctf-skills/{solve-challenge,ctf-writeup,ctf-similar-search}/` |
 
 ## Arsenal ejecutable
 
@@ -38,6 +53,17 @@ skills/CTF/bin/ctf-arsenal find-main binario
 - Script parametrizable → `scripts/`; el CLI solo es un despachador.
 - Plantilla de writeup → `templates/writeup.md`.
 - Checklist de cierre → `checklists/triaje.md`.
+
+## Profundidad externa (vendorizada)
+
+```bash
+python scripts/install_skills.py --repo . --only ctf-web --with-deep
+```
+
+- Material original sin modificar en `skills/_src/ljagiello-ctf-skills/`
+  (MIT, commit `a6106aaf`). Procedencia en `VENDOR.md`.
+- `ctf-pwn`, `ctf-crypto`, `ctf-reverse` y `ctf-forensics` del upstream **no** se
+  vendorizaron: aquí se cubren con las skills propias de `_full/`.
 
 ## Recuerda (guardrails)
 
